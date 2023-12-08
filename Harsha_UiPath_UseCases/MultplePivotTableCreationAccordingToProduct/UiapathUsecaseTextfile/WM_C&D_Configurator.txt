@@ -1,0 +1,20 @@
+﻿#FileName > SheetName > Columns of interest > Destination > FormulaID
+
+ABCD Bill Register - RAW data.xlsm > YTD > PRODUCT ,MONTH ,YEAR,BILLING,NET,JOB/EST > S_productSheet > product
+
+#SOCIAL-NW.XLSX > GS.,1619 > Month ,NET ORDERED,PRODUCT,MEDIA,PUBLICATION > S_socialNw > Social_Nw
+
+#SEARCH-google.XLSX > GS.,1626 > Month,NET ORDERED,MEDIA,PUBLICATION > S_searchGoogle3 > search_google
+
+#SEARCH-google.XLSX > GS.,1626 > Month ,MEDIA ,NET ORDERED,PRODUCT, PUBLICATION > S_searchGoogle > search_google
+#TV DPL JULY 2023.XLSX > RAM.,432 > MONTH, DPART, EST,UNITS, COMMISSION > S_MonthlyCommission > UiP_Formula2
+#TV DPL JULY 2023.XLSX > RAM.,432 > MONTH, DPART, EST, ORDERED > S_MonthlyOrdered > UiP_Formula2
+
+#TV DPL JULY 2023.XLSX > RAM.,432 > MONTH, DPART, UNITS > S_MonthlyUnits > UiP_Formula2
+#TV DPL JULY 2023.XLSX > RAM.,432 > WEEK, DPART, UNITS > S_WeeklyUnit > UiP_Formula2
+
+
+
+
+
+ 

@@ -1,0 +1,139 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "readMultipleScanPDFUsingREGX.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "path&Sequence_6",
+        "readPDFusingOCR&Sequence_6",
+        "DT&Sequence_6",
+        "dtOP&Sequence_6",
+        "outputDT&Sequence_6",
+        "Value&Sequence_6",
+        "readPDF&Sequence_5",
+        "read&Sequence_5",
+        "GCP&Sequence_5",
+        "outputDT&Sequence_5",
+        "readREGX&Sequence_5",
+        "invoiceMatch&Sequence_4",
+        "str&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PDFToExcel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT&Sequence_2",
+        "dtOP&Sequence_2",
+        "readPDF&Sequence_2",
+        "invoiceMatch&Sequence_2",
+        "emailTemplate&Sequence_2",
+        "recepientList&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "singleScanPDFRegx.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "path&Sequence_3",
+        "invoice&Sequence_3",
+        "text&Sequence_3",
+        "orderNo&Sequence_3",
+        "invoiceDate&Sequence_3",
+        "DueDate&Sequence_3",
+        "totalDue&Sequence_3",
+        "Total&Sequence_3",
+        "SubTotal&Sequence_3",
+        "tax&Sequence_3",
+        "DT&Sequence_3",
+        "opDT&Sequence_3",
+        "readPDF&Sequence_3",
+        "discount&Sequence_3",
+        "serviceNo&Sequence_3",
+        "billDate&Sequence_3",
+        "amount&Sequence_3",
+        "invoiceNo&Sequence_3",
+        "dateOfIssue&Sequence_3",
+        "invoiceTotal&Sequence_3",
+        "freshbooks&Sequence_3",
+        "read&Sequence_3",
+        "readREGX&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "readMultiplePDF.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT&Sequence_3",
+        "dtOP&Sequence_3",
+        "readPDF&Sequence_3",
+        "invoiceMatch&Sequence_3",
+        "emailTemplate&Sequence_3",
+        "recepientList&Sequence_3",
+        "path&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "invoiceMatch",
+        "argument1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT&Sequence_5",
+        "dtOP&Sequence_5",
+        "readPDF&Sequence_5",
+        "invoiceMatch&Sequence_5",
+        "emailTemplate&Sequence_5",
+        "recepientList&Sequence_5",
+        "readPDF&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "regext_to_get_data.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "path&Sequence_1",
+        "invoice&Sequence_1",
+        "text&Sequence_1",
+        "orderNo&Sequence_1",
+        "invoiceDate&Sequence_1",
+        "DueDate&Sequence_1",
+        "totalDue&Sequence_1",
+        "Total&Sequence_1",
+        "SubTotal&Sequence_1",
+        "tax&Sequence_1",
+        "DT&Sequence_1",
+        "opDT&Sequence_1",
+        "DT&Sequence_2",
+        "inputDT&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+﻿{
+  "Metadata": {
+    "Id": "69a68a55-88b2-4e72-9e45-bf205c25f394",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "showinputFieldOnbuttonClick",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "hiddenfield",
+        "hidden": true,
+        "tableView": true,
+        "defaultValue": "False",
+        "key": "hiddenfield",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "name",
+        "tableView": true,
+        "key": "name",
+        "conditional": {
+          "show": true,
+          "when": "hiddenfield",
+          "eq": "True"
+        },
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Submit",
+        "showValidations": false,
+        "disableOnInvalid": true,
+        "tableView": false,
+        "key": "submit",
+        "properties": {
+          "closeOnSubmit": "False"
+        },
+        "type": "button",
+        "saveOnEnter": false,
+        "input": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+﻿6<!-- form
+{
+  "Metadata": {
+    "Id": "a8ec11a6-666f-45d0-bbb8-aa31e970d1db",
+    "DisplayName": "form.html",
+    "Kind": "Html"
+  }
+}
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My HTML Form</title>
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+		}
+		.actions {
+			margin-top: .7em;
+		}
+		button {
+			border-width: 0;
+			width: 10em;
+			height:  2em;
+			border-radius: 0.4em;
+		}
+		button:hover {
+			cursor: pointer;
+		}
+
+		.confirm {
+			background-color: #55AA33;
+		}
+		.cancel {
+			background-color: #DD7755;
+		}
+
+		.bottom {
+			position:  absolute;
+			bottom:  .5em;
+		}
+	</style>
+	<script type="text/javascript">
+			var uiPathApi = {
+                getValue: function (elementId) {
+                    // this is a callback, being called from the workflow
+                    // enter your own code to get element values
+                    var el = document.getElementById(elementId);
+                    if (el.value == undefined) {
+                        return el.innerHTML;
+                    } else {
+                        if (el.checked == undefined) {
+                            return el.value;
+                        } else {
+                            return el.value;
+                        }
+                    }
+                },
+        
+                setValue: function (elementId, value) {
+                    // this is a callback, being called from the workflow
+                    // enter your own code to set element values
+                    var el = document.getElementById(elementId);
+                    if (el.value == undefined) {
+                        el.innerHTML = value;
+                    } else {
+                        if (el.checked == undefined) {
+                            el.value = value;
+                        } else {
+                            el.value = value;
+                        }
+                    }
+                },
+        
+                // Call this to trigger a "Form Message" event
+                // This function is set by the forms engine after the page loads,
+                // but declaring it here as empty helps with code autocompletion
+                sendMessage: function (id, value) { },
+			};
+	</script>
+	<script>
+		function okClicked() {
+			uiPathApi.sendMessage("ok clicked");
+		}
+
+		function cancelClicked() {
+			uiPathApi.sendMessage("cancel clicked");
+		}
+function city()
+{
+uiPathApi.sendMessage("city changed");
+}
+	</script>
+</head>
+<body>
+	<div>Welcome to UiPath! Click OK to continue or Cancel to close this automation.</div>
+<label for="city">City :</label><br>
+  <input type="text" id="city" name="city" value=" " oninput= "city()"><br>
+  <label for="state">State:</label><br>
+  <input type="text" id="state" name="state" value="">
+	<div class="actions">
+		<button class="confirm" onclick="okClicked()">OK</button>
+		<button class="cancel" onclick="cancelClicked()">Cancel</button>
+	</div>
+	<div class="bottom">Current date/time is <span id="time">N/A</span></div>
+</body>
+</html>

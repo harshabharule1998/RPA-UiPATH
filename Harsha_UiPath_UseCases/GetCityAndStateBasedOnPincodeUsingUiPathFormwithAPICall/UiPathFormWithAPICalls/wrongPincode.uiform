@@ -1,0 +1,41 @@
+﻿{
+  "Metadata": {
+    "Id": "d5b4d467-a325-45ee-89c3-9dbcecb56435",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "wrongPincode",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h3",
+        "content": "You have entered wrong pincode please Enter The Valid Pincode",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "pincode",
+        "tableView": true,
+        "key": "pincode",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

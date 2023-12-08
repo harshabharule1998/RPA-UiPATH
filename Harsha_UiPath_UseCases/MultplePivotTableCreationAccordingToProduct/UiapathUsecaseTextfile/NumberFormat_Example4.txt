@@ -1,0 +1,16 @@
+﻿Sub GetFirstNSheetNames() 
+ FormatCurrency(Range("I6"))
+End Sub
+
+Sub GetFirstNSheetNames()
+'
+' GetFirstNSheetNames Macro
+'
+
+'
+    ActiveSheet.PivotTables("pivottable").PivotSelect "'Row Grand Total'", _
+        xlDataAndLabel, True
+    With ActiveSheet.PivotTables("pivottable").PivotFields("Sum of NET")
+        .NumberFormat = "$#,##0"
+    End With
+End Sub

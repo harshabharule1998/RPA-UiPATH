@@ -1,0 +1,33 @@
+﻿Sub Macro2()
+'
+' Macro2 Macro
+'
+
+'
+    Cells.Select
+    Range("O14").Activate
+    Sheets.Add After:=ActiveSheet
+    ActiveWorkbook.PivotCaches.Create(SourceType:=xlDatabase, SourceData:= _
+        "RAM.,432!R1C1:R109C12", Version:=6).CreatePivotTable TableDestination:= _
+        "Sheet1!R1C1", TableName:="PivotTable1", DefaultVersion:=6
+    Sheets("Sheet1").Select
+    Cells(1, 1).Select
+    With ActiveSheet.PivotTables("PivotTable1").PivotFields("EST")
+        .Orientation = xlRowField
+        .Position = 1
+    End With
+    With ActiveSheet.PivotTables("PivotTable1").PivotFields("DPART")
+        .Orientation = xlRowField
+        .Position = 2
+    End With
+    With ActiveSheet.PivotTables("PivotTable1").PivotFields("MONTH")
+        .Orientation = xlRowField
+        .Position = 3
+    End With
+    ActiveSheet.PivotTables("PivotTable1").AddDataField ActiveSheet.PivotTables( _
+        "PivotTable1").PivotFields("ORDERED"), "Sum of ORDERED", xlSum
+    With ActiveSheet.PivotTables("PivotTable1").PivotFields("MONTH")
+        .Orientation = xlColumnField
+        .Position = 1
+    End With
+End Sub

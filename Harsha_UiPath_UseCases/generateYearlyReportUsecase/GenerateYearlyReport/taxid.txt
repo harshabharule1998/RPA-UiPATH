@@ -1,0 +1,11 @@
+New column 0
+"TaxID: DE767565
+Name: Maxitronic Limited
+Address: Bingauer Strasse 45
+City: Koln, Germany
+"
+WIID: 89309269
+Type: Generate Yearly Report for Vendor
+Status: Open
+Date: 2018-12-08
+

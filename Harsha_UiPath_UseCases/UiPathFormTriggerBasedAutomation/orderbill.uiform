@@ -1,0 +1,138 @@
+﻿{
+  "Metadata": {
+    "Id": "8a42c7d9-9ca2-4d94-bd98-d62b34157eeb",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "orderbill",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "name",
+        "tableView": true,
+        "key": "name",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "phone number",
+        "tableView": true,
+        "key": "phoneNumber",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Select product ",
+        "widget": "choicesjs",
+        "tableView": true,
+        "data": {
+          "values": [
+            {
+              "label": "Book(pack of 12)",
+              "value": "400"
+            },
+            {
+              "label": "pen(pack of 12)",
+              "value": "60"
+            },
+            {
+              "label": "writing pad(5 piece))",
+              "value": "250"
+            }
+          ]
+        },
+        "validate": {
+          "required": true
+        },
+        "key": "selectProduct",
+        "logic": [
+          {
+            "name": "quntity",
+            "trigger": {
+              "type": "javascript",
+              "javascript": "return true;"
+            },
+            "actions": [
+              {
+                "name": "per quantity",
+                "type": "value",
+                "value": "return data.selectProduct;"
+              }
+            ]
+          }
+        ],
+        "type": "select",
+        "input": true
+      },
+      {
+        "label": "price(per quantity)",
+        "disabled": true,
+        "tableView": true,
+        "key": "pricePerQuantity",
+        "logic": [
+          {
+            "name": "per quantity",
+            "trigger": {
+              "type": "javascript",
+              "javascript": "return true"
+            },
+            "actions": [
+              {
+                "name": "select product",
+                "type": "value",
+                "value": "return data.selectProduct"
+              }
+            ]
+          }
+        ],
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "quantity",
+        "tableView": true,
+        "key": "quantity",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Total Amount",
+        "disabled": true,
+        "tableView": true,
+        "key": "totalAmount",
+        "logic": [
+          {
+            "name": "Amount",
+            "trigger": {
+              "type": "javascript",
+              "javascript": "return true;"
+            },
+            "actions": [
+              {
+                "name": "Total Amount",
+                "type": "value",
+                "value": "return data.pricePerQuantity*data.quantity;"
+              }
+            ]
+          }
+        ],
+        "type": "textfield",
+        "input": true,
+        "defaultValue": null
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

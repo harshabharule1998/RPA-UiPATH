@@ -1,0 +1,55 @@
+﻿{
+  "Metadata": {
+    "Id": "313fc4cf-5572-4cc2-ae17-0a4a02b711a3",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "autopopulate",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Pincode",
+        "tableView": true,
+        "validate": {
+          "minLength": 6
+        },
+        "errorLabel": "Invalid Pincode",
+        "key": "pincode",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "State",
+        "tableView": true,
+        "key": "State",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "City",
+        "tableView": true,
+        "key": "country",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Submit",
+        "showValidations": false,
+        "disableOnInvalid": true,
+        "tableView": false,
+        "key": "submit",
+        "properties": {
+          "closeOnSubmit": "false"
+        },
+        "type": "button",
+        "input": true,
+        "saveOnEnter": false
+      }
+    ]
+  }
+}
