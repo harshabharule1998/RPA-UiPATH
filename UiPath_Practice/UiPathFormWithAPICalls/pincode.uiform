@@ -1,0 +1,45 @@
+﻿{
+  "Metadata": {
+    "Id": "dffc73a0-54b1-45e4-98cd-13ca44452fef",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "NewForm",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "content": "Enter the pincode to search city and state  of respective pincode",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Pincode",
+        "tableView": true,
+        "key": "pincode",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Search for This Pincode",
+        "showValidations": false,
+        "disableOnInvalid": true,
+        "tableView": false,
+        "key": "submit",
+        "properties": {
+          "closeOnSubmit": "False"
+        },
+        "type": "button",
+        "saveOnEnter": false,
+        "input": true
+      }
+    ]
+  }
+}

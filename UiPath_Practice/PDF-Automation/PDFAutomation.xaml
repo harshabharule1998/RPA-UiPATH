@@ -1,0 +1,449 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="PDFAutomation" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,2287" sap2010:WorkflowViewState.IdRef="PDFAutomation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:p2="http://schemas.uipath.com/workflow/activities/intelligentocr/extraction" xmlns:p3="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p4="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p5="http://schemas.uipath.com/workflow/activities/document-processing-contracts/extraction" xmlns:p6="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Taxonomy</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Dom</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Results</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.DocumentUnderstanding.Digitizer.Utils</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.Digitization</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.Vision.Core.OCR</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.DataExtraction</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.PDF.Activities.PDF</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.TaxonomyManagement</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.DataExtraction</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.ValidationStation</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentProcessing.Contracts</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices.RuntimeInformation</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.Digitizer</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MachineLearningExtractor.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="PDFUserDriven" sap:VirtualizedContainerService.HintSize="735,2222" sap2010:WorkflowViewState.IdRef="Sequence_19">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="input" />
+      <Variable x:TypeArguments="x:Int32" Name="ocrChoice" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[input&gt;0]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="693,2130" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+      <ui:InterruptibleDoWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="657,1965" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="615,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[&quot;Please enter your choice&quot;+Environment.NewLine+&quot;1-Read PDF&quot;+Environment.NewLine+&quot;2-Read PDF with OCR&quot;+Environment.NewLine+&quot;3-Extract image from PDF&quot;+Environment.NewLine+&quot;4-Join PDF Files&quot;+Environment.NewLine+&quot;5-Get PDF page count&quot;+Environment.NewLine+&quot;6-Manage PDF password&quot;+Environment.NewLine+&quot;7-Export PDF page as Image&quot;]" Title="Multiple Choice">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:Int32">[input]</OutArgument>
+            </ui:InputDialog.Result>
+          </ui:InputDialog>
+          <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[input]" sap:VirtualizedContainerService.HintSize="615,1595" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+            <Switch.Default>
+              <If Condition="[input&gt;7]" sap:VirtualizedContainerService.HintSize="484,362" sap2010:WorkflowViewState.IdRef="If_2">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,176" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Please enter valid choice&quot;]" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Switch.Default>
+            <Sequence x:Key="1" DisplayName="readPDFTextNative" sap:VirtualizedContainerService.HintSize="376,424" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="PDFOutput" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="PDFNativeScanned\Text and Image PDF.pdf" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="1" Text="[PDFOutput]" />
+              <ui:WriteTextFile File="{x:Null}" DisplayName="Write PDF output text file" FileName="PDF-Automation\PDFNativeScanned\PDFOutput.txt" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[PDFOutput]" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[PDFOutput.ToString]" />
+            </Sequence>
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" x:Key="2" Condition="[ocrChoice&gt;0]" DisplayName="read pdf with multiple ocr engine" sap:VirtualizedContainerService.HintSize="575,1280" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="539,1115" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="497,238" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="[&quot;Please enter your choice&quot;+Environment.NewLine+&quot;1-Read PDF with tesseract OCR &quot;+Environment.NewLine+&quot;2-Read PDF with Microsoft OCR&quot;+Environment.NewLine+&quot;3-Read PDF with Google cloud vision OCR&quot;+Environment.NewLine+&quot;4-Read PDF with UiPath Document OCR&quot;+Environment.NewLine]" Title="Multiple Choice">
+                    <ui:InputDialog.Result>
+                      <OutArgument x:TypeArguments="x:Int32">[ocrChoice]</OutArgument>
+                    </ui:InputDialog.Result>
+                  </ui:InputDialog>
+                  <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[ocrChoice]" sap:VirtualizedContainerService.HintSize="497,745" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                    <Switch.Default>
+                      <If Condition="[ocrChoice&gt;5]" sap:VirtualizedContainerService.HintSize="484,362" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,176" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Invalid OCR Choice&quot;]" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Switch.Default>
+                    <Sequence x:Key="1" DisplayName="readScannedPDFText" sap:VirtualizedContainerService.HintSize="376,496" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="PDFOutput" />
+                        <Variable x:TypeArguments="x:String" Name="readScannedPDF" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="PDF-Automation\PDFNativeScanned\Text and Image PDF.pdf" sap:VirtualizedContainerService.HintSize="334,131" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All" Text="[readScannedPDF]">
+                        <ui:ReadPDFWithOCR.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                            <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" />
+                          </ActivityFunc>
+                        </ui:ReadPDFWithOCR.OCREngine>
+                      </ui:ReadPDFWithOCR>
+                      <ui:WriteTextFile File="{x:Null}" DisplayName="Write PDF output text file" FileName="PDF-Automation\PDFNativeScanned\ScannedPDFWithTesseract.txt" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[readScannedPDF]" />
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[readScannedPDF.ToString]" />
+                    </Sequence>
+                    <Sequence x:Key="2" DisplayName="getOCRtextMicrosoft" sap:VirtualizedContainerService.HintSize="376,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="microsoftOCR" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get OCR Text 'graphic Unlabeled'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+                        <ui:GetOCRText.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                            <ui:MicrosoftOCR FilterRegion="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" ComputeSkewAngle="False" DisplayName="Microsoft OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_1" Image="[Image]" Language="English" Profile="Scan" Scale="2" Text="[microsoftOCR]" />
+                          </ActivityFunc>
+                        </ui:GetOCRText.OCREngine>
+                        <ui:GetOCRText.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1b295d59-66d8-4e69-8964-7215ae15774a" InformativeScreenshot="b9e7acc0818620c95d09e727afd26fc1" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Sample Invoice A.pdf and 1 more page - Profile 1 - Microsoft​ Ed*' /&gt;&lt;ctrl name='Sample Invoice A.pdf' role='document' /&gt;&lt;ctrl name='PDF document containing 1 page' role='document' /&gt;&lt;ctrl name='Page 1' role='pane' /&gt;&lt;ctrl name='Unlabeled graphic' role='graphic' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetOCRText.Target>
+                      </ui:GetOCRText>
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[microsoftOCR.ToString]" />
+                    </Sequence>
+                    <Sequence x:Key="3" DisplayName="googleCloudVisionOCR" sap:VirtualizedContainerService.HintSize="376,324" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="ui:Image" Name="GCVImage" />
+                        <Variable x:TypeArguments="x:String" Name="GCPtextOCR" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ReadPDFWithOCR DegreeOfParallelism="1" DisplayName="Read PDF With OCR" FileName="PDF-Automation\GoogleCloudVisionOCR\GoogleCloudVisionOcr.pdf" sap:VirtualizedContainerService.HintSize="334,131" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_2" ImageDpi="150" Range="All" Text="[GCPtextOCR]">
+                        <ui:ReadPDFWithOCR.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                            <ui:GoogleCloudOCR FilterRegion="{x:Null}" Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" ApiKey="AIzaSyAkSb12xfxmCNNZkEue1bFyjmb9hLiONWc" ComputeSkewAngle="False" DetectionMode="TextDetection" DisplayName="Google Cloud Vision OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleCloudOCR_1" Image="[Image]" ResizeToApiLimits="True" Text="[GCPtextOCR]" />
+                          </ActivityFunc>
+                        </ui:ReadPDFWithOCR.OCREngine>
+                      </ui:ReadPDFWithOCR>
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[GCPtextOCR.ToString]" />
+                    </Sequence>
+                    <Sequence x:Key="4" DisplayName="handwritten extraction using uipath document OCR" sap:VirtualizedContainerService.HintSize="520,2038" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="p6:DocumentTaxonomy" Name="taxanomy" />
+                        <Variable x:TypeArguments="x:String" Default="E:/UiPath_Practice/PDF-Automation/handwrittenDataImageForUiPathDocument.pdf" Name="DocumentPath" />
+                        <Variable x:TypeArguments="x:String" Name="DocumentText" />
+                        <Variable x:TypeArguments="p4:Document" Name="DOM" />
+                        <Variable x:TypeArguments="p3:ExtractionResult" Name="ExtractionResult" />
+                        <Variable x:TypeArguments="p3:ExtractionResult" Name="ValidationResult" />
+                        <Variable x:TypeArguments="sd1:DataSet" Name="DataSet" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="478,103" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1" Taxonomy="[taxanomy]" />
+                      <p:DigitizeDocument ApplyOcrMigrated="True" ApplyOcrOnPdf="Auto" DegreeOfParallelism="1" DetectCheckboxes="True" DisplayName="Digitize Document" DocumentObjectModel="[DOM]" DocumentPath="[DocumentPath]" DocumentText="[DocumentText]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="478,293" sap2010:WorkflowViewState.IdRef="DigitizeDocument_1">
+                        <p:DigitizeDocument.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, x:String, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))" Argument1="{x:Reference __ReferenceID0}" Argument2="{x:Reference __ReferenceID1}">
+                            <p1:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="Vk9CbuwrpSwhP2Bx49VxjKmCvBF3iaD4/epG3PQj/RFGLADridankmeygj7mz3Dev5MJPhyNXzWdVu19K4FA4w==" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,22" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_1" Language="auto" Profile="None" Scale="1" Timeout="100000">
+                              <p1:UiPathDocumentOCR.Image>
+                                <InArgument x:TypeArguments="sd:Image">
+                                  <DelegateArgumentValue x:TypeArguments="sd:Image" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_1">
+                                    <DelegateInArgument x:TypeArguments="sd:Image" x:Name="__ReferenceID0" Name="Image" />
+                                  </DelegateArgumentValue>
+                                </InArgument>
+                              </p1:UiPathDocumentOCR.Image>
+                              <p1:UiPathDocumentOCR.PredictionId>
+                                <InArgument x:TypeArguments="x:String">
+                                  <DelegateArgumentValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_2">
+                                    <DelegateInArgument x:TypeArguments="x:String" x:Name="__ReferenceID1" Name="PredictionId" />
+                                  </DelegateArgumentValue>
+                                </InArgument>
+                              </p1:UiPathDocumentOCR.PredictionId>
+                            </p1:UiPathDocumentOCR>
+                          </ActivityFunc>
+                        </p:DigitizeDocument.OCREngine>
+                      </p:DigitizeDocument>
+                      <p2:DataExtractionScope ClassificationResult="{x:Null}" DisplayName="Data Extraction Scope" DocumentObjectModel="[DOM]" DocumentPath="[DocumentPath]" DocumentText="[DocumentText]" DocumentTypeId="NoGroup.NoCategory.employee" ExtractionResult="[ExtractionResult]" FormatValuesIfPossible="True" sap:VirtualizedContainerService.HintSize="478,482" sap2010:WorkflowViewState.IdRef="DataExtractionScope_1" Taxonomy="[taxanomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UI2f7e92320ac848ff93791e33c7f9ff12&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;NoGroup.NoCategory.employee&quot;:{&quot;FieldMappings&quot;:{&quot;NoGroup.NoCategory.employee.PhoneNumber&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.employee.PhoneNumber&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.employee.StartDate&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.employee.StartDate&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true}},&quot;ExtractorDocumentTypeId&quot;:null},&quot;NoGroup.NoCategory.EmpDetails&quot;:{&quot;FieldMappings&quot;:{},&quot;ExtractorDocumentTypeId&quot;:null}}}},&quot;ExtractorMinimumConfidence&quot;:{&quot;UI2f7e92320ac848ff93791e33c7f9ff12&quot;:&quot;0&quot;},&quot;ExtractorsAliases&quot;:{},&quot;DocumentTypeOptionsByExtractor&quot;:{&quot;UI2f7e92320ac848ff93791e33c7f9ff12&quot;:[]}}">
+                        <p2:DataExtractionScope.Extractors>
+                          <p2:IntelligentFormExtractor SerializedSignatureFields="{x:Null}" ApiKey="Vk9CbuwrpSwhP2Bx49VxjKmCvBF3iaD4/epG3PQj/RFGLADridankmeygj7mz3Dev5MJPhyNXzWdVu19K4FA4w==" DisplayName="[deprecated] Intelligent Form Extractor" Endpoint="https://du.uipath.com/svc/intelligentforms" sap:VirtualizedContainerService.HintSize="234,161" sap2010:WorkflowViewState.IdRef="IntelligentFormExtractor_1" MinOverlapPercentage="65" PersistenceId="UI2f7e92320ac848ff93791e33c7f9ff12" SerializedSettings="{}{&quot;DocTypeSettings&quot;:[{&quot;DocumentTypeId&quot;:&quot;NoGroup.NoCategory.employee&quot;,&quot;SignatureFields&quot;:[],&quot;HandwritingFields&quot;:[{&quot;FieldId&quot;:&quot;NoGroup.NoCategory.employee.PhoneNumber&quot;},{&quot;FieldId&quot;:&quot;NoGroup.NoCategory.employee.StartDate&quot;}],&quot;BooleanSynonymsForYes&quot;:[],&quot;BooleanSynonymsForNo&quot;:[],&quot;CaseSensitiveSynonyms&quot;:false},{&quot;DocumentTypeId&quot;:&quot;NoGroup.NoCategory.EmpDetails&quot;,&quot;SignatureFields&quot;:[],&quot;HandwritingFields&quot;:[],&quot;BooleanSynonymsForYes&quot;:[],&quot;BooleanSynonymsForNo&quot;:[],&quot;CaseSensitiveSynonyms&quot;:false}]}" SerializedTemplates="[{&quot;DocumentTypeId&quot;:&quot;NoGroup.NoCategory.employee&quot;,&quot;FormId&quot;:&quot;528b723d&quot;,&quot;FormName&quot;:&quot;HandwrittenTemplate&quot;,&quot;OriginalFileExtension&quot;:&quot;jpg&quot;,&quot;Pages&quot;:[{&quot;Page&quot;:0,&quot;Size&quot;:[0.0,0.0,800.0,418.0],&quot;SkewAngle&quot;:-0.5,&quot;Evidence&quot;:[],&quot;Fields&quot;:[],&quot;Tables&quot;:[]}],&quot;AnchorBasedConfiguration&quot;:{&quot;AnchorBasedFieldConfiguration&quot;:[]}}]" Timeout="100000">
+                            <p2:IntelligentFormExtractor.DocumentBounds>
+                              <InArgument x:TypeArguments="p3:ResultsDocumentBounds">
+                                <DelegateArgumentValue x:TypeArguments="p3:ResultsDocumentBounds">
+                                  <DelegateInArgument x:TypeArguments="p3:ResultsDocumentBounds" Name="DocumentBounds" />
+                                </DelegateArgumentValue>
+                              </InArgument>
+                            </p2:IntelligentFormExtractor.DocumentBounds>
+                            <p2:IntelligentFormExtractor.DocumentObjectModel>
+                              <InArgument x:TypeArguments="p4:Document">
+                                <DelegateArgumentValue x:TypeArguments="p4:Document">
+                                  <DelegateInArgument x:TypeArguments="p4:Document" Name="DocumentObjectModel" />
+                                </DelegateArgumentValue>
+                              </InArgument>
+                            </p2:IntelligentFormExtractor.DocumentObjectModel>
+                            <p2:IntelligentFormExtractor.DocumentPath>
+                              <InArgument x:TypeArguments="x:String">
+                                <DelegateArgumentValue x:TypeArguments="x:String">
+                                  <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
+                                </DelegateArgumentValue>
+                              </InArgument>
+                            </p2:IntelligentFormExtractor.DocumentPath>
+                            <p2:IntelligentFormExtractor.DocumentText>
+                              <InArgument x:TypeArguments="x:String">
+                                <DelegateArgumentValue x:TypeArguments="x:String">
+                                  <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
+                                </DelegateArgumentValue>
+                              </InArgument>
+                            </p2:IntelligentFormExtractor.DocumentText>
+                            <p2:IntelligentFormExtractor.ExtractorDocumentType>
+                              <InArgument x:TypeArguments="p5:ExtractorDocumentType">
+                                <DelegateArgumentValue x:TypeArguments="p5:ExtractorDocumentType">
+                                  <DelegateInArgument x:TypeArguments="p5:ExtractorDocumentType" Name="ExtractorDocumentType" />
+                                </DelegateArgumentValue>
+                              </InArgument>
+                            </p2:IntelligentFormExtractor.ExtractorDocumentType>
+                            <p2:IntelligentFormExtractor.ExtractorResult>
+                              <OutArgument x:TypeArguments="p5:ExtractorResult">
+                                <DelegateArgumentReference x:TypeArguments="p5:ExtractorResult">
+                                  <DelegateOutArgument x:TypeArguments="p5:ExtractorResult" Name="ExtractorResult" />
+                                </DelegateArgumentReference>
+                              </OutArgument>
+                            </p2:IntelligentFormExtractor.ExtractorResult>
+                            <p2:IntelligentFormExtractor.PredictionId>
+                              <InArgument x:TypeArguments="x:String">
+                                <DelegateArgumentValue x:TypeArguments="x:String">
+                                  <DelegateInArgument x:TypeArguments="x:String" Name="PredictionId" />
+                                </DelegateArgumentValue>
+                              </InArgument>
+                            </p2:IntelligentFormExtractor.PredictionId>
+                          </p2:IntelligentFormExtractor>
+                        </p2:DataExtractionScope.Extractors>
+                      </p2:DataExtractionScope>
+                      <p:PresentValidationStation AutomaticExtractionResults="[ExtractionResult]" DisplayName="Present Validation Station" DocumentObjectModel="[DOM]" DocumentPath="[DocumentPath]" DocumentText="[DocumentText]" sap:VirtualizedContainerService.HintSize="478,365" sap2010:WorkflowViewState.IdRef="PresentValidationStation_1" ShowOnlyRelevantPageRange="False" Taxonomy="[taxanomy]" ValidatedExtractionResults="[ValidationResult]" />
+                      <p2:ExportExtractionResults DataSet="[DataSet]" DisplayName="Export Extraction Results" ExtractionResult="[ValidationResult]" sap:VirtualizedContainerService.HintSize="478,173" sap2010:WorkflowViewState.IdRef="ExportExtractionResults_1" IncludeConfidence="False" IncludeOCRConfidence="False" />
+                      <ui:ForEach x:TypeArguments="sd1:DataTable" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="478,330" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[DataSet.Tables]">
+                        <ui:ForEach.Body>
+                          <ActivityAction x:TypeArguments="sd1:DataTable">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd1:DataTable" Name="item" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,207" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:WriteRange AddHeaders="False" DataTable="[item]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[item.TableName]" StartingCell="A1" WorkbookPath="E:\UiPath_Practice\PDF-Automation\PDF-Automation\UiPathDocumentOCR\HandWrittenData.xlsx" />
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEach.Body>
+                      </ui:ForEach>
+                    </Sequence>
+                  </Switch>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+            </ui:InterruptibleDoWhile>
+            <Sequence x:Key="3" DisplayName="extractImageFromPDF" sap:VirtualizedContainerService.HintSize="376,252" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <upap:ExtractImagesFromPDF DisplayName="Extract Images From PDF" FileName="E:\UiPath_Practice\PDF-Automation\PDF-Automation\ExtractImagesFromPDF\Text and Image PDF.pdf" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExtractImagesFromPDF_1" OutputFolderName="E:\UiPath_Practice\PDF-Automation\PDF-Automation\ExtractImagesFromPDF" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="Image extracted from PDF successfully" />
+            </Sequence>
+            <Sequence x:Key="4" DisplayName="joinPDFFiles" sap:VirtualizedContainerService.HintSize="376,252" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="joinedPDF" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <upap:JoinPDF DisplayName="Join PDF Files" FileList="[{&quot;PDF-Automation\JoinPDF\Sample Invoice A.pdf&quot;,&quot;PDF-Automation\JoinPDF\Text and Image PDF.pdf&quot;}]" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="JoinPDF_1" OutputFileName="PDF-Automation\JoinPDF\JoinedPDF.pdf" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="joined pdf completed" />
+            </Sequence>
+            <Sequence x:Key="5" DisplayName="getPDFPageCount" sap:VirtualizedContainerService.HintSize="376,252" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Int32" Name="getPageCount" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <upap:GetPDFPageCount DisplayName="Get PDF Page Count" FileName="PDF-Automation\PDFNativeScanned\Text and Image PDF.pdf" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="GetPDFPageCount_1" PageCount="[getPageCount]" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[&quot;Number of pages&quot;+getPageCount.ToString]" />
+            </Sequence>
+            <Sequence x:Key="6" DisplayName="managePDFPassword" sap:VirtualizedContainerService.HintSize="376,303" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <upap:ManagePDFPassword DisplayName="Manage PDF Password" FileName="PDF-Automation\PDFPassword\108875815.pdf" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ManagePDFPassword_1" NewOwnerPassword="12345" NewUserPassword="54321" OutputFileName="PDF-Automation\PDFPassword\PWDProtectedPDF.pdf" />
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;process completed&quot;]" />
+            </Sequence>
+            <Sequence x:Key="7" DisplayName="exportPDFPageAsImage" sap:VirtualizedContainerService.HintSize="376,66" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <upap:ExportPDFPageAsImage DisplayName="Export PDF Page As Image" FileName="PDF-Automation\ExportPDFAsImage\Sample Invoice A.pdf" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExportPDFPageAsImage_1" ImageDpi="150" OutputFileName="PDF-Automation\exportPDFAsImage\PDFToImage.png" PageNumber="1" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="export pdf to image completed" />
+            </Sequence>
+          </Switch>
+        </Sequence>
+      </ui:InterruptibleDoWhile.Body>
+    </ui:InterruptibleDoWhile>
+  </Sequence>
+</Activity>

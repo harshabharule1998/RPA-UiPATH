@@ -1,0 +1,97 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Result2&Sequence_1",
+        "Result1&Sequence_1",
+        "Result&Sequence_1",
+        "SecondNo&Sequence_1",
+        "FirstNo&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestAutomationCalculator.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sum&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "sum1",
+        "SecondNumber",
+        "FirstNumber"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DataActivities.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "address&Sequence_1",
+        "randomevalue&Sequence_1",
+        "randomedate&Sequence_1",
+        "randomstring&Sequence_1",
+        "randomnumber&Sequence_1",
+        "lastname&Sequence_1",
+        "FirstName&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestUibank.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "password&Sequence_4",
+        "errMsg&Sequence_4",
+        "ErrMsg&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCase1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "range&Sequence_1",
+        "sum&Sequence_1",
+        "variable1&Sequence_1",
+        "action&Sequence_1",
+        "count1&Sequence_1",
+        "res2&Sequence_1",
+        "secno&Sequence_1",
+        "no1&Sequence_1",
+        "res&Sequence_1",
+        "firstno&Sequence_1",
+        "count&Sequence_1",
+        "no&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

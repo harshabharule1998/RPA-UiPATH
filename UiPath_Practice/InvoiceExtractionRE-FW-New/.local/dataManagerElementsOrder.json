@@ -1,0 +1,68 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "MailsList&StateMachine_1",
+        "EmailId&StateMachine_1",
+        "ExtractedCompanyName&StateMachine_1",
+        "CurrentDateFolder&StateMachine_1",
+        "path&StateMachine_1",
+        "PdfFiles&StateMachine_1",
+        "readREGX&StateMachine_1",
+        "InvoiceNo&StateMachine_1",
+        "DT&StateMachine_1",
+        "dateOfIssue&StateMachine_1",
+        "invoiceTotal&StateMachine_1",
+        "SubTotal&StateMachine_1",
+        "tax&StateMachine_1",
+        "discount&StateMachine_1",
+        "orderNo&StateMachine_1",
+        "InvoiceDate&StateMachine_1",
+        "totalDue&StateMachine_1",
+        "dueDate&StateMachine_1",
+        "QueueName&StateMachine_1",
+        "QFolderName&StateMachine_1",
+        "readExcel&Sequence_43",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

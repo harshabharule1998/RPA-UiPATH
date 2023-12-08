@@ -1,0 +1,106 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="findImage" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="758,515" sap2010:WorkflowViewState.IdRef="findImage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="25">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="19">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="findImage" sap:VirtualizedContainerService.HintSize="768,414" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="creditValue" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="726,198" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
+      <ui:AnchorBase.Action>
+        <ActivityAction x:TypeArguments="ui:Anchor">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+          </ActivityAction.Argument>
+          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'grouping'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+            <ui:GetValue.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1ed48c54-a094-48c7-97ac-16c1238ec3e1" InformativeScreenshot="5ebfb252017df6233fe08851ffd7e778" Selector="&lt;ctrl role='grouping' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:GetValue.Target>
+            <ui:GetValue.Value>
+              <OutArgument x:TypeArguments="x:String">[creditValue]</OutArgument>
+            </ui:GetValue.Value>
+          </ui:GetValue>
+        </ActivityAction>
+      </ui:AnchorBase.Action>
+      <ui:AnchorBase.AnchorProvider>
+        <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image 'chrome.exe Invoice'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+          <ui:WaitImageAppear.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAADkAAAAPCAYAAABeO2c1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOVSURBVEhL7ZX/T9R1HMc/n7vPedDpBXiEKykFKZogXwI1v2wRZbMc6ta1mW6AgelGjbbg5Cpyo28EnaatFuquWlIOtljTUOJsHcQprhPmLjlvqJMx7va5z+5PePQ+z8TpbRxtxWb98Nw+e3157/V4f16v11uKRCLc6/of8l7RrCAnvd+xr/p51hatoGDVM2yzOfFMxI+dlbQAx20v8WLtQQbVMKNf1WO1vsZhbzjmV8cYGLhI+M68BJUwZHDgA8osOiSDhcdWr6Mky4xekkkra+WcGj8nYWmjvL/GgO6han4IhvG8V87Dmet5x60SudZFXX4qi17uZCpebgJKDFLzceBZM7KSw86uAFrUpnpxbEhDl5THm/0htEu9dDg+pevMz3yxtx77kUEmIhoBVwfNr+9mT8OHdJ69Pn1meIxTnzVRV2ejvfsk+25Baoy7nDgcR+kbC9B/0EqOImNevYu2ziEm/8qfhRKDvNbBpgUSygqbaKdpu3rlEv5J7cZ36MSrLNErpFlSkCUdi7Yf4+LxGh5NkknKWEb2A0Zk80reck2J+Kt01+ZgFHHmzFyy0lMxm+SbkCruxnwUfS71p89gL52PIknigpNJ3XgAv3ZbXQkqIcjwSAtPKhLzyhwE4vijikFKGJbX8HXfSfrPe2hZY0SXvpkOv4bmO8TGFB0Lrd8QCRziOZOE8Ykm3FPi/NH9bLg/DmS0Q3wfsc4gk/6Pt2tgP08bxZ8saWY4PG0P/t5H74XrN9o3Bqknt76fUNQ/dYxtFlF4xkqslVVUVW6lWMy0kt+I6nqDxxU92Xt+isWGz/NuqTLHkOogewsMSMmraB4KxmxiTj9/wSLa6BFqfwzeatfit8/FtmCwm8oHdeiXVmBva6e9/WNaW9twHDlNeKiJQjFnGdu/jxWuumnIm2tIsUD83+5giWhZxVLApsoadpRnM1+WMBU38UtoeiZLmodvrvpxjm5diC45j51f9tLnfIXlRiPZu3rEBZxgd5YeOW09jZ2n6GmtIFO0elzIy5/wlEFiQXkLvWf/IHhXbTMrQcioQox0NlJRtBjzPAWDeTFFW+x0+2Jv2d2Q0VlzUl2QIp4aCSm6ZPKqcI5G4zUu9zSwNl0v7DKmZZvZUnof+jiQEdWFrdAk4sQFF9rx3DYuiWoWkH9Xk/iH3fw65GPizs0YDOD1XODKTO9s6Cojvw3iHRfQ8fwz6F+AnHv9ByAj/Ane4Tk8obcDugAAAABJRU5ErkJggg==" />
+          </ui:WaitImageAppear.Image>
+          <ui:WaitImageAppear.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="95960d1b-8f80-4fc2-8632-876428a865a8" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Invoice #38645 - Google Chrome' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:WaitImageAppear.Target>
+        </ui:WaitImageAppear>
+      </ui:AnchorBase.AnchorProvider>
+    </ui:AnchorBase>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="726,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[creditValue]" />
+  </Sequence>
+</Activity>

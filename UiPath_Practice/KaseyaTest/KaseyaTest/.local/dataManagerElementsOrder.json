@@ -1,0 +1,253 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "in_Res_CL&StateMachine_1",
+        "outputFilePath&StateMachine_1",
+        "dt_inputFileData&StateMachine_1",
+        "str_internalID&StateMachine_1",
+        "str_companyName&StateMachine_1",
+        "str_renewalDate&StateMachine_1",
+        "str_subscriptionPlan&StateMachine_1",
+        "count&Sequence_2",
+        "ShouldStop&Sequence_3",
+        "dt_outputData&Sequence_13",
+        "dt_tempFolderBasedResume&Sequence_4",
+        "bool_outputFilePathExists&Sequence_4",
+        "executionTimeFilePath&Sequence_4",
+        "arr_InputFolders&Sequence_4",
+        "str_OutputFileAsPerInputFolder&Sequence_5",
+        "str_folderName&Sequence_5",
+        "bool_OutputFileAsPerInputFileExists&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_AppendResumeData&Sequence_1",
+        "str_rebookingOpp&Sequence_1",
+        "str_rebookingQuote&Sequence_1",
+        "str_debookingOpp&Sequence_1",
+        "str_debookingQuote&Sequence_1",
+        "str_consolidatedLink&Sequence_1",
+        "str_ARRValue&Sequence_1",
+        "str_effectiveDate&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config",
+        "out_outputData",
+        "in_retryNumber",
+        "in_companyName",
+        "in_EndDate",
+        "in_subscriptionName",
+        "in_internalNo"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SalesForceLogin.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_SFLoginLink&Sequence_1",
+        "str_SFLoggedLink&Sequence_1",
+        "str_afterLoggedURL&Sequence_1",
+        "str_contractNumber&Sequence_1",
+        "str_contractPrice&Sequence_1",
+        "str_billToContact&Sequence_1",
+        "str_year&Sequence_1",
+        "str_month&Sequence_1",
+        "str_date&Sequence_1",
+        "bool_BillSearchPopUpExist&Sequence_1",
+        "str_endDate&Sequence_1",
+        "str_contractNum&Sequence_1",
+        "str_contractLink&Sequence_1",
+        "str_billToContactManager&Sequence_1",
+        "BillrowNumber&Sequence_1",
+        "str_username&Sequence_1",
+        "str_password&Sequence_1",
+        "SignInWindowExists&Sequence_7",
+        "bool_AfterLoginPage&Sequence_8",
+        "SFLoggedLink&Sequence_8",
+        "SignInWindowExists&Sequence_14",
+        "str_username&Sequence_14",
+        "str_password&Sequence_14",
+        "bool_AfterLoginPage&Sequence_15",
+        "SFLoggedLink&Sequence_15",
+        "str_afterLoggedURL&Sequence_15",
+        "bool_SubscriptionPageExists&Sequence_26",
+        "dt_SubscriptionTable&Sequence_26",
+        "dt_ContactTable&Sequence_26",
+        "bool_MoreThan5SubsPresent&Sequence_28",
+        "bool_InitiateContarctModification&Sequence_31",
+        "Str_billToContact&Sequence_37",
+        "bool_contractDebookingExists&Sequence_37",
+        "bool_allLinksgenertaed&Sequence_37",
+        "dt_allLinkTable&Sequence_37",
+        "dt_consolidatedLinkTable&Sequence_37",
+        "str_inputDate&Sequence_38",
+        "dt_contractTable&Sequence_38",
+        "bool_rebookingPageExists&Sequence_38",
+        "str_errorMsg&Sequence_38",
+        "bool_errorPopUpExists&Sequence_38",
+        "count&Sequence_38",
+        "ExtractDataTable&Sequence_38",
+        "dt_BillToContactTable&Sequence_74",
+        "ExtractDataTable&Sequence_76",
+        "count&Sequence_76",
+        "ExtractDataTable&Sequence_78",
+        "dt_BillToContactTable&Sequence_62",
+        "dt_ExtractedBillToContact&Sequence_63",
+        "ExtractDataTable&Sequence_83",
+        "dt_ExtractedBillToContact&Sequence_64",
+        "SignInWindowExists&Sequence_2",
+        "str_username&Sequence_2",
+        "str_password&Sequence_2",
+        "bool_AfterLoginPage&Sequence_3",
+        "SFLoggedLink&Sequence_3",
+        "str_afterLoggedURL&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_CompanyName",
+        "in_EndDate",
+        "in_SubscriptionName",
+        "out_effectiveDate",
+        "out_ARRValue",
+        "in_InternalNo",
+        "out_RebookingOpp",
+        "out_RebookingQuote",
+        "out_DebookingOpp",
+        "out_DebookingQuote",
+        "out_consolidatedLink"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DebookingQouteFlow - Copy (1).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_username&Sequence_115",
+        "str_password&Sequence_115",
+        "endDateDbookQPdfUpdated&Sequence_1",
+        "readDebookQoute&Sequence_1",
+        "text&Sequence_1",
+        "DebookingQouteUpdated&Sequence_1",
+        "endDateDbookQPdf&Sequence_1",
+        "subscriptionPageLink&Sequence_1",
+        "serchOverrideInDebookQoute&Sequence_1",
+        "UpdateDateOnPDFDateTime&Sequence_1",
+        "EndDateOnSubscriptionDateTime&Sequence_1",
+        "DateOnPdfDateTime&Sequence_1",
+        "DQouteID&Sequence_1",
+        "DateOnPdf&Sequence_1",
+        "DateOnOldPdf&Sequence_2",
+        "isElementPresent&Sequence_92",
+        "urlOfEditLinesPage&Sequence_73",
+        "totalEurValue&Sequence_73",
+        "variable1&Sequence_73",
+        "value&Sequence_73",
+        "negativeValue&Sequence_73"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_subscriptionEndDate",
+        "in_DebookeQoutePageLink",
+        "in_Notes",
+        "argument1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "date1&Sequence_1",
+        "nextDate&Sequence_1",
+        "excelDate&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DebookApportunity.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_username&Sequence_67",
+        "str_password&Sequence_67",
+        "in_Notes&Sequence_1",
+        "isContractModification&Sequence_1",
+        "ExcludeTarMatrix&Sequence_1",
+        "SubscriptioForQouteDataPageLink&Sequence_1",
+        "primaryProductIntrest&Sequence_17",
+        "value&Sequence_17",
+        "nextDate&Sequence_17",
+        "excelDate&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_EndDate",
+        "in_DebookApportunityPageLink",
+        "in_productName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "RebookingOpportunityPage.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_ArrAmount&Sequence_1",
+        "isChecked&Sequence_2",
+        "isTarMetrics&Sequence_2",
+        "isAutoProvision&Sequence_2",
+        "str_oppType&Sequence_2",
+        "str_CloseDate&Sequence_2",
+        "str_contConversion&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Notes",
+        "in_rebookingOppLink"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_username&Sequence_2",
+        "str_password&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

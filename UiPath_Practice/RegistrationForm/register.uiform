@@ -1,0 +1,49 @@
+﻿{
+  "Metadata": {
+    "Id": "8a54fc6b-6aba-48c1-ada8-15393fc0edb7",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "NewForm",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Select operation",
+        "widget": "choicesjs",
+        "tableView": true,
+        "data": {
+          "values": [
+            {
+              "label": "New User",
+              "value": "newUser"
+            },
+            {
+              "label": "Existing User",
+              "value": "existingUser"
+            },
+            {
+              "label": "",
+              "value": ""
+            }
+          ]
+        },
+        "key": "selectOperation",
+        "type": "select",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

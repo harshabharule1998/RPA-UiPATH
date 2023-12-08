@@ -1,0 +1,71 @@
+End Date: 30-Apr-2024
+This is an internal connective TRANSACTION of Datto contract.
+Please push through and do not send anything to the customer.
+
+SD
+sharayud@cybage.com
+Dcybage@23
+  riyamohan@cybage.com.sandbox
+  Hpriya#1994
+  
+  586
+  kaseya sandbox envionment link 
+  https://kaseya--sandbox.sandbox.my.salesforce.com
+  
+  4130252Bert Hoogschagen
+  
+  kaseya vidio link
+https://cybage-my.sharepoint.com.rproxy.goskope.com/personal/sumitpa_cybage_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fsumitpa%5Fcybage%5Fcom%2FDocuments%2FRecordings%2FCall%20with%20Rohit%20and%201%20other%2D20230427%5F193034%2DMeeting%20Recording%2Emp4&referrer=OfficeHome&referrerScenario=EDGEWORTH
+DR request link
+
+
+
+debooking apportunity
+https://kaseya--sandbox.sandbox.my.salesforce.com/0067e00000N8ooYAAR
+
+rebooking oppportunity
+https://kaseya--sandbox.sandbox.my.salesforce.com/0067e00000N8ooYAAR
+
+https://cybage-my.sharepoint.com.rproxy.goskope.com/personal/sumitpa_cybage_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fsumitpa%5Fcybage%5Fcom%2FDocuments%2FRecordings%2FCall%20with%20Rohit%20and%201%20other%2D20230427%5F193034%2DMeeting%20Recording%2Emp4&referrer=OfficeHome&referrerScenario=EDGEWORTH
+
+
+
+RMM randson product
+Rebook /Debook-- Qoute/ Apportunity Links 
+
+
+
+debook qoute 
+https://kaseya--sandbox.sandbox.my.salesforce.com/a847e0000000mswAAA
+debook apportunity
+https://kaseya--sandbox.sandbox.my.salesforce.com/0067e00000N8ooYAAR
+rebook apportunity
+https://kaseya--sandbox.sandbox.my.salesforce.com/0067e00000N8oonAAB
+Rebook Qoute 
+
+https://kaseya--sandbox.sandbox.my.salesforce.com/a847e0000000mt1AAA
+
+PSA premium
+
+debook qoute 
+https://kaseya--sandbox.sandbox.my.salesforce.com/a847e0000000mswAAA
+debook apportunity
+"https://kaseya--sandbox.sandbox.my.salesforce.com/0067e00000N8ooYAAR"
+
+subscription
+https://kaseya--sandbox.sandbox.my.salesforce.com/a8E7e000000wtXr
+
+
+(?<=MSEXC_A\s)\d{2}\-\w{3}\-\d{4}" 
+
+https://kaseya--sandbox.sandbox.my.salesforce.com/0067e00000NP3X2AAL
+Qoute
+
+https://kaseya--sandbox--c.sandbox.vf.force.com/apex/submitForApprovalQuote?id=a847e000000ECa2AAG&action=redirectQuote
+
+rmm randson qoute
+
+https://kaseya--sandbox.sandbox.my.salesforce.com/a847e000000ECmAAAW
+
+rmm randson apportunity
+https://kaseya--sandbox.sandbox.my.salesforce.com/0067e00000NPC1FAAX

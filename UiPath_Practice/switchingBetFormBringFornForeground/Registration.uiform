@@ -1,0 +1,45 @@
+﻿{
+  "Metadata": {
+    "Id": "30be6936-85ae-4e2f-b00e-23347b10c6bb",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Registration",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Select Operation",
+        "widget": "choicesjs",
+        "tableView": true,
+        "data": {
+          "values": [
+            {
+              "label": "New Registration",
+              "value": "NewRegistration"
+            },
+            {
+              "label": "Existing Registration",
+              "value": "existingRegistration"
+            }
+          ]
+        },
+        "key": "selectOperation",
+        "type": "select",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

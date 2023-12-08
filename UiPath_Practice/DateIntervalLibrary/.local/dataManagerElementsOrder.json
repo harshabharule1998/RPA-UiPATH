@@ -1,0 +1,25 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DateInterval.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TodaysDate&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "InputDate",
+        "Interval"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

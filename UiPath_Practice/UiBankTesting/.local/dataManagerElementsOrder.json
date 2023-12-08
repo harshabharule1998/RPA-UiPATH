@@ -1,0 +1,72 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "UserValue&StateMachine_1",
+        "DT6&StateMachine_1",
+        "count&StateMachine_1",
+        "inputData&Sequence_32",
+        "ShouldStop&Sequence_25",
+        "in_Config&TryCatch_4",
+        "in_Transactionitem&TryCatch_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransferFundAmount&Sequence_1",
+        "Second&Sequence_1",
+        "First&Sequence_1",
+        "Third&Sequence_1",
+        "FirstAccount&Sequence_1",
+        "Name&Sequence_1",
+        "DT1&Sequence_1",
+        "Accounts&Sequence_1",
+        "DT3&Sequence_1",
+        "Fourth&Sequence_1",
+        "UserValue&Sequence_1",
+        "DT6&Sequence_1",
+        "DownloadedStatements&Sequence_1",
+        "NameFromQ&Sequence_1",
+        "count&Sequence_1",
+        "variable1&Sequence_97",
+        "DT2&Sequence_103",
+        "StoreTransactions&Sequence_103"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+﻿{
+  "Metadata": {
+    "Id": "fe77ecba-b99b-455d-ad48-e4117496dd02",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "StudyParticipationConcent",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h2",
+        "content": "Blood donation participant form",
+        "key": "MainHeader",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Are you intrested to participate in the donation",
+        "optionsLabelPosition": "right",
+        "inline": false,
+        "tableView": false,
+        "values": [
+          {
+            "label": "Yes",
+            "value": "yes",
+            "shortcut": ""
+          },
+          {
+            "label": "No",
+            "value": "no",
+            "shortcut": ""
+          }
+        ],
+        "key": "wantToParticipate",
+        "type": "radio",
+        "input": true
+      },
+      {
+        "label": "Are you above 18 or not",
+        "optionsLabelPosition": "right",
+        "inline": false,
+        "tableView": false,
+        "values": [
+          {
+            "label": "yes",
+            "value": "yes",
+            "shortcut": ""
+          },
+          {
+            "label": "No",
+            "value": "no",
+            "shortcut": ""
+          }
+        ],
+        "key": "areYouAbove18OrNot",
+        "type": "radio",
+        "input": true
+      },
+      {
+        "tag": "h2",
+        "key": "Above 18",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "tag": "h2",
+        "key": "Below 18",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Full Name",
+        "placeholder": "Enter your age",
+        "tableView": true,
+        "key": "fullName",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Age",
+        "placeholder": "Enter your age",
+        "tableView": true,
+        "key": "age",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "City",
+        "tableView": true,
+        "key": "city",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "District",
+        "tableView": true,
+        "key": "district",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

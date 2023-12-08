@@ -1,0 +1,248 @@
+
+LINQ
+
+LINQ stands for language integrated query . 
+its powerful language extension for evaluating data volumes
+data volume comes from different sources 
+such as database , object , xml, etc
+
+1.What is LINQ
+2.Benifits of using LINQ
+3.LINQ architecture
+4.LINQ providers
+
+LINQ Array
+LINQ DataTables
+Parts of LINQ Query
+LINQ XML
+LINQ GroupBy
+LINQ Orderby
+LINQ join function
+LinQ filter data table
+
+Advantages:
+LinQ enables us to work with different data sources using a similar coding style
+It provides intellisense and compile time error checking
+
+linq query can be written using any .net supported programming language
+
+LINQ providers-- its a component between linq query and actual data source which convert the linq query into format that
+the underlying dta source can understand
+For example: linq to sql provider converts a linq query to T-SQL that sql server database can understand
+
+LINQ consist of 6 parts:
+
+1.( --bracket and begining
+2.From -- to get data from data source  to do that we need to define variable /datarow etc
+then we set preposition IN  and then we write the name of datasource from which we will read the data
+for example we had a datatable and we wanted to get data from data table then we will define datarow variable
+eg .FROM  variable /datarow--row  In --in array/datatable--DT  
+so the second part is to get the entire data i.e read data
+3.in this part we can use the function like group /join /order etc  in this part we prepare the data which we get from data source
+so we will only look onto this data and not to the entire data
+for eaxmple we group the rows based on the column in the datatable then later we can get the data from this groupd data
+4.where / let statement
+we can also define new variable to get data from the data source to do some calculation
+for example i need to mark all rows from the data table where the name of the employee is john
+so this part is to mark the data which will give us output later
+with the where statement we mark the desired data 
+5.select --  statement
+this part is used to select data from the outpute
+with the select statement we get the data that we had selected
+6.)
+after bracket we can set a function to convert the output to a certain data type
+for example i want to get output as data table so i can add the function as copyToDataTable
+so after ) this bracket we write a function to change the data that we got into specific data type
+so this part is used to convert the output
+
+NumbersArray= {1,2,3,4,5,6,7,8,9,10}
+we want to get number from this array 
+where number modulo 2 = 0
+
+(From num in NumbersArray where num Mod 2=0 select num).ToArray
+
+LINQ Functions:
+1.Group--
+group the datatable by one column 
+this help us to get the uniq rows from the data table
+Group functions consist of 5 parts
+1) Group ----permanent
+2) variable-- from row in Excel-DT
+row is variable here 
+3) By(permanent)  
+4) a=   this 4 th part is a condition , on which part we want to group
+5)into group=Group----permanent
+
+2.Order--
+order the datatable by one column 
+3.Join--
+join two datatable using one column
+
+Sum 
+calculate sum of ages for the name max
+(
+From row in DT where row("Name").ToString.Equals("Max")
+select row 
+).Sum(Function(x) Cint(x("age")))
+
+Average
+calculate average of ages for the name max
+(
+From row in DT where row("Name").ToString.Equals("Max")
+select row 
+).Average(Function(x) CDBL(x("age")))// CDBL --to get averag as double
+
+distinct function --to get uniq rowsfrom the output
+
+ORDER BY: 
+we use this function to sort table using one column
+1. order by --permanent
+2. variable
+3.Ascending /Descending 
+From row in Excel_DT
+order by row("city") ascending
+
+LINQ joins
+inner join 
+
+inner join query has 6 parts
+1.(
+2.From a in dt1
+3.join b in dt2
+4.on a("columnName").ToString equals b("columnName").ToString 
+5.select out_DT.rows.add  
+6.).CopyToDataTable
+
+outer join --left , right, full outer join
+
+left outer
+1.(
+2.From a in dt1
+3.Group Join b in dt2// here we define another variable for row of second table the preposition in then name of 2nd table
+4.on a("columnName").ToString equals b("columnName").ToString into grp=Group// we set new var for groped data
+5.From g in grp.DefaultIfEmpty 
+6.select out_DT.rows.add  if(Nothing(g), Nothing , g(columnName))// if condition else
+The condition checks if we have a value in a group if not we set the value empty
+if not empty we take the value from the group 
+7.).CopyToDataTable
+DefaultIfEmpty-- this function gives us a data if we have data , else it gives us empty value
+
+
+Filter data table using LINQ query
+it has 6 parts
+1.(
+2.From row in DataTable name 
+3.where condition
+4.select row 
+5.).CopyToDataTable
+
+
+Range function
+generates a sequence of integer within a specified range
+Enumerable.Range(Start,Count)
+start--the value of the first integer within specified range
+count--the number of sequential integer to generate 
+ex: to generate seq from 1 to 10
+Enumerable.Range(1,10)
+
+Linq where :
+to filter a sequence of values based on a predicate
+where(condition)
+we can use logical operators with it
+and 
+andalso
+or
+orelse
+
+
+Quntifier operator --evaluate elements of sequence on some condition and return boolean value to indicate 
+that some of all elements satisfy the condition
+means result of this operator is always boolean we get
+all--determines weather all elements of a sequnce satisfy a condition 
+convert Datatable to html string,remove duplicate rows from excel, compare two data tables with linq ,Range operatot linq,ofTypeOperator in linq
+to use this operator we use lambda expression
+lambda expression:
+1				2
+(Function(x))   x Condition)
+sequnce.All(Function(x) x Condition)
+any--determines weather any elements of a sequnce exists or satisfies a condition
+atleast one element or more , result of this operator always contains in boolean
+contains--
+Element Operators:
+are used to return a single element from a data source using the element index or based on condition 
+ElementAt--returns element at a specified index in a sequnce
+if index found -- return one element
+index not found -- ArgumentOutOfRangeException
+ElementAt(Index)
+First-- returns first element in a sequnce 
+FirstOrDefault-- returns first element in a sequnce or default value if no element is found 
+Last
+Single
+ElementAtOrDefault --returns element at a specified index in a sequnce or default value if the index out of range 
+if index found -- return one element
+index not found -- Default value 
+ElementAtOrDefault(Index)
+FirstOrDefault
+LasttOrDefault
+SingleOrDefault
+
+SkipLast
+return a new enumerable collection that contains elements from source 
+with the last count element of the source collection ommitted
+
+macro
+execute macro
+xlsm extension for macro
+create macro to calculate smallest and largest age from xlsm file 
+automate the process in uipath
+
+check the developer tab from excel setting 
+macros are something like script in vba that you exceute to do any kind of operations 
+
+various .Net methods to manipulate the strings
+String.isnullorempty
+String.isnullorwhitespace
+cstr--convert.Tostring 
+convert date to string
+StrReverse
+String.Format
+getType
+TrimStart, TrimEnd,Trim
+PadLeft, PadRight
+Ltrim -- will trim the spaces at left side of the string 
+Rtrim--will trim the spaces at right side of the string 
+
+
+Invoke VBA
+what is vba-- stands for visual basic for an application 
+invoke vba activity only work inside excel application scope
+give trust enable vba access from excel setting 
+
+split method --
+type conversion CChar
+split string  from user input 
+using curly braces 
+using cchar
+split string from text file 
+
+
+DateTime variable in uipath 
+functions
+Datetime.Now.ToString()
+Get current seconds
+get current time
+Get current year 
+Get current Datetime as string with TIMEZONE
+Get current Datetime with AM / PM
+Get first date of the current month
+https://kaseya--sandbox.sandbox.my.salesforce.com/aBO7e0000008xkGGAQ
+
+str_firstdate = New DateTime(DateTime.Now.Year, DateTime.Now.Month, 1).ToString
+
+convert string to datetime variable --use parseExact function
+System -
+cultureInfo--provides info about soecific culture 
+invariantCulture-- culture insensitive 
+
+System.text.RegularExpressions.Regex.Match(text,"(?<=Page\s).*(?=\/)").Value
+

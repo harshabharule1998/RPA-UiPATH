@@ -1,0 +1,11 @@
+New column 0
+"TaxID: FR322345
+Name: Miditronic Technologies
+Address: Avenue Lafarge 23
+City: Grenoble, France
+"
+WIID: 89309272
+Type: Generate Yearly Report for Vendor
+Status: Open
+Date: 2021-07-11
+

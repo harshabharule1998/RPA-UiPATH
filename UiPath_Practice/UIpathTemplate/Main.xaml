@@ -1,0 +1,223 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,2852" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="738,2787" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="excelData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="676,2676" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="LoginData.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="642,2566" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[excelData]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="580,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+              <ui:ExcelReadRange.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ExcelReadRange.Range>
+            </ui:ExcelReadRange>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[excelData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="580,2355" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="546,2240" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Login | Salesforce" sap:VirtualizedContainerService.HintSize="484,2129" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c286f23f-6d0a-4729-9692-5874e58ad6e8" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1832" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c286f23f-6d0a-4729-9692-5874e58ad6e8" Text="[row(&quot;username&quot;).ToString]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://kaseya--sandbox.sandbox.my.salesforce.com/" CvType="InputBox" DesignTimeRectangle="181, 361, 338, 43" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT username'" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='email' class='input r4 wide mb16 mt8 username' aaname='Username' /&gt;" Guid="6f116244-27e9-4ea9-b8cd-29dfe8ee466d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVYAAAAvCAYAAAC49eI+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKtSURBVHhe7dpPalRZGMbhs4lehiuQhu5NKN32huLIgTPFWSexJ25AB2KctSKOVCQgGB3E3KoiWpKqSn32ew0o+D+eWT8PvFBQd/zjcO5t63XV6rhqvljXZL6ql7NlPRsWtfvqqJ7um5nZ55ZGppVpZtqZhqalaWrLj9dHx7U3XdaDvbd168lh3Xg4q+3709q8N6m//zUzs4+XNqaRaWWamXamoWlpmtpS2efTRd3dfVOXbg91bvOgzlwe6pcNMzP72tLKC/8MYzvT0LQ0TW05wqa2+ePslaE27szr0f6qAPi6tDLN/P3aZGxoWpqmthezZd18fFjntw7GBwD4MRd35vXXfyfXtDRNbbl8zT1BjrROqgA/Lu1MQ9PSNLXlzVYuYXNfAMDppKFpaZra8tlA3nAJK8DppaFpaZo6hjWfDwgrwOmloWmpsAJ0IqwAnQkrQGfCCtCZsAJ0JqwAnXULa2vt5BfA/5uwAnQmrACdCStAZ8IK0JmwAnQmrACdCStAZ8IK0JmwAnQmrACdCStAZ8IK0JmwAnQmrACdCStAZ8IK0Fm3sALwnrACdCasAJ0JK0BnwgrQmbACdCasAJ19EtbNe8IK8DPS0LR0DOvuq6Pavj8VVoCfkIampWlqezYs6sbDWZ25PNSj/dXJIwB8r7QzDU1L09T2Yrasm48P64/toTbuzE8eA+B7XdyZ1/mtYWxpmtom81U92Htbl24P9du1yfiAkyvAt6WVaeavVydjQ9PSNLXNF+t6Pl3U3d034x/ntg7GI23uC8zM7MtLK/+8PoztTEPT0jS1rY6rXh8d1950Odb21pPD8Z4gl7B5w5XPB8zM7MPSxjQyrUwz0840NC1NU9t6XeOPVDZH2Jez5Xj5mjdb+WzAzMw+XRqZVqaZaWcampau11XvABYORxMG7gnHAAAAAElFTkSuQmCC" InformativeScreenshot="6d471127c7231a175faeb56807acbb82.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | Salesforce' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CvTextArgument="Username" CvType="Text" DesignTimeRectangle="181, 338, 57, 15" ElementType="Text" FriendlyName="'Username'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='label usernamelabel' aaname='Username' check:innerText='Username' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD0AAAATCAYAAAAjxAWvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJwSURBVFhH7ZS7iyJBEMbvjzQxMTIx0EAOZBlYDDQwWBEUhsVDcHECF8QLBlYRDGQ5EDkxGFhMOpBFEVQMRhY1+Lb6NY/DYOXuuIf+YKCru6a6vurq/oQL5Cr6UriKvhQ80ctOFTedpbJ8HPMO9xNl/CdcRf9Z0W9wV64a/17OEO1ialWRyFTkVxhAes/xXDa9+dwjI0+JiGkN0MiWECX/zaKHm6yNvooTS5aQa8+wV/5YTVDL8zglxMlvupPTXhy1Fsu04Gz1vmQna7DZm3QmXMfGrc7TaGK4UguKj4vmCRtPeJXTHtN6BSmLKcvFsFwhf5kAjxlJNzHeClPGSPB1VZbdBJV0Fd0fkuIs26aXj4hjfPWL0K4iSkK7C2nDaSGW7clD2A6QS1p41nuyJ6T0muKMk56jmy8hVWihO2LYHPjcEt2sCVtvzhk1Ef3yIoY8ZuJxJsYCUbhgAvx/HX+Ncb2GlKG6JnmHiOlIL4rzuT0XY8GkiQh1jn8ZqHiJJoQ3XzOD93EO2wgX1hO9ocBRtYkPT6qE2lSZxH7F4HQsxNPUYgeZdEy3kv4sX3SokKK9T4t2BzVEy99DVyMoOhRHCAvm6uA+KJquTSifzAP6p0TLtqjCnum7ccSGTi2eprZSMz4MjYysHrMqKH7TvRTmHNG86LG6LBY/9X4hfNIfFr0domDYYKITT+OLJlzWQ9GgRydBG9IXz7cw1hVaUFG8ypkodvSDxdtSPXDZBzRGazHLOUc0di/iwRNdk6U72faFnSWakDpkrrfmAEy9BZqQ6J/niP2Mga2Oyv4LOKzxOp0H7v8vF/1vcBV9KVygaOAdugQxnP48VyoAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="c286f23f-6d0a-4729-9692-5874e58ad6e8" Text="[row(&quot;password&quot;).ToString]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://kaseya--sandbox.sandbox.my.salesforce.com/" CvType="InputBox" DesignTimeRectangle="181, 443, 338, 43" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='input r4 wide mb16 mt8 password' aaname='Password' /&gt;" Guid="96e5e2d8-510a-4818-854d-f10e1f77accc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVYAAAAvCAYAAAC49eI+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFRSURBVHhe7dhBasJQGIXR7n9YSjcgIijuQ91LRmb+yh/MI0ptG3uH58AdJC/jj0feGgBRwgoQdhfWcby2y/nUdttN+/x4NzOzH1atrGZWO5d6WOvgeNhPHw3DcHsLwDPVympmtXMZ1x7WOqwBsM5jP3tY60rrpgqwXrWzGjrrYa3/BQC8ZtlQYQUIEFaAMGEFCBNWgDBhBQgTVoAwYQUIE1aAMGEFCBNWgDBhBQgTVoAwYQUIE1aAMGEFCBNWgDBhBQgTVoAwYQUIE1aAMGEFCBNWgDBhBQgTVoAwYQUIE1aAMGEFCBNWgDBhBQgTVoAwYQUIE1aAMGEFCBNWgLBvw7rbbtowDLcnAP6q2lkNnfWwXs6naQCs89jPHtZxvLbjYT8durkC/K5aWc2sdlZDZz2spQ7qo7rS1v8CMzN7vmplNXMZ1XIXVgD+T1gBolr7Atu2jq1qWKnIAAAAAElFTkSuQmCC" InformativeScreenshot="fbd29a9b4d899451d901e55d11b8d3ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | Salesforce' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CvTextArgument="Password" CvType="Text" DesignTimeRectangle="181, 420, 52, 15" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl parentid='login_form' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='login_form' tag='LABEL' type='' class='label' aaname='Password' check:innerText='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAATCAYAAADF7c7rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKPSURBVFhH7VU9ayJRFN0faZNmK5spYiGCiBAstLBYESIMwTDFEgsDiVsIKmKKISwEWbEQRBZeEULCgMoUI8GkODl33hvXWVg2whZr8MDAu+/r3nPvuW8+4YPjQHDfcSC479gQ9Lp1JI6rsLI1flV8TjtwhguzuicYN5Eo9OEZUxAnaE+MRfhj1NI22vfG3gfsRJCY2F+Q6y6wXvkIXszk/4xdCY5IsOj6HPlQ3QYylG+SVa24j3rDaoqLgkhaf8WBXB1g1qhv5qyyC++pj1y2gwd9Cg+XNSTycVv7AZbDK+TSulWS6XqsTSThtZaLMlso2ZjSv0Lv1OY+8cW4KuTwPoKvWM46yB07uNV+t0DpWk3ITjmTav2mYSGzFbzGPa6zdfSezLjQRI3BaNtDr2DGs29I5ttQkVpeFC7yv9pECB6V+ngI159xdyoKM8lmzF7X+QvBzSNTQ6bcxmj+Gq4Fqo9KwUYqXKviyDIBPd3ghBUtnvcxUlEmHtErVZEqX6E3VFiaYKVKle/P5NdBholcug6DYyi+i6JJiMSQaUUBa3gtW+8jhGB4h7ZwxkSPjBViV4lq/IRDEtfKmOHFUfYFz1iqCaVCSZ1PsTaz67nChLJOpq8wEZJSHd4vfs7GtIVYyaUkm7AudYneQzA8G+KfEZzyIgc3pkABA03FCBqoNqzSDZbG1KDERJpzGTOgfAOVUgN3YVV93JYdlCs2nJnYBKubSlP+K2OveGbrJY8TXPC8VDRSTsB19vbuBLnmfoVl5HvScPmwaILewNlI2mLwPRVQtqxMNCeN31V0LdA9c3T6Y1PlgDJNmH6OII/MyeZ8/F8cJ0jMx3AKfHDM3otBG7k/EfyoOBDcdxwI7jeANweKtu9RzRp3AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log In to Sandbox'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c286f23f-6d0a-4729-9692-5874e58ad6e8" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://kaseya--sandbox.sandbox.my.salesforce.com/" CvElementArea="179, 500, 341, 46" CvTextArea="293, 517, 113, 15" CvTextArgument="Log In to Sandbox" CvType="Button" DesignTimeRectangle="181, 502, 338, 43" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Log In to Sandbox'" FullSelectorArgument="&lt;webctrl id='Login' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Login' tag='INPUT' type='submit' class='button r4 wide primary' aaname='Log In to Sandbox' check:text='Log In to Sandbox' /&gt;" Guid="3e7f80f1-d1de-4223-b735-e06b15563de3" ImageBase64="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" InformativeScreenshot="b9e60392a8434784396cdc8586f72d26.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | Salesforce' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sharayu Deshmukh'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c286f23f-6d0a-4729-9692-5874e58ad6e8" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://kaseya--sandbox.sandbox.my.salesforce.com/home/home.jsp" CvTextArgument="Sharayu Deshmukh" CvType="Text" DesignTimeRectangle="910, 150, 114, 12" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Sharayu Deshmukh'" FullSelectorArgument="&lt;webctrl id='phHeader' tag='TABLE' /&gt;&lt;webctrl id='userNav-arrow' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='phHeader' tag='TABLE' /&gt;&lt;webctrl id='userNavLabel' type='' tag='SPAN' class='menuButtonLabel' aaname='Sharayu Deshmukh' check:innerText='Sharayu Deshmukh' /&gt;" Guid="4988ae98-870b-4ac3-af94-bf05addca305" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHYAAAAQCAYAAADDCotWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJfSURBVFhH7VZLasMwEM0teqOewutepmTdfXah4AMUAoWQjbswhEJ2gZBsuiw03qqSZsZ+I8tO0rg0NVq8fKT5vJk3kj2pqsokjA9J2JEiCTtSJGFHioiwezOfvZq7J0a+ofVDaTL7f7oO7W8FGzMVzjUKs4ranodVbmPMSrOL7F0P5iv9BQyRty3surANWZr5QX6zmP9E2Gyxr9eubdCohN0tlo2wuMfCZjO3bxPHmsjrDSkmb32cry+C44gtDUpYJIiEwyW3SbTotrDaV2rj3NBQtQ6nnBrM3NUe88gL4u2Ql3DTBXbCV/HBmqVPZNedtx+L7Ye5f37zPpGrmJM44DSJILxGQnJCT5h/q5OtCUuh0nycTGouxovcGpcKK8NYD4g0CG2ZIzRY8RMeGEt4cDwZDM8xZtcrrAyEcOvLS/t9eCy2XtzOlyecYiRMpAIhPJgo+qimiV1wQqRoH5+KQcGHEpaaFcDzEpEYEFvxUPHZh+uieuSWi9hFa9H9Qt7deWn/FB5e3ruFJXByV0CPsCKU31N24I/xmLQugJqQLUpdyADCOl8SFgcxAOfxiPLD+EMKa69cZxOe2Ghe2j+Fz69jW1jVAJj4PmGVT4y8CIvxIiLJgDRNCn04Hvg0aDdANQh5qVq0H/p0N/hcYXVv1AGQWnyMbg7h3rnof8Y6SIIeYWWP7OmhT0SQPPlRoQR6EeMYGKcuyoGb6Nfty0owDA0C3h4Q2wJzIyd1WmGohhAWY0/ty5b/jgw9xvglYf8QwfAk/Bw3I2x9mqKnMeFSTI72I2F8mHwdK5MwNlTmG160xlljlcGuAAAAAElFTkSuQmCC" InformativeScreenshot="7525a52c93a1b1dea1bfca9e9a09648f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Salesforce - Unlimited Edition' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c286f23f-6d0a-4729-9692-5874e58ad6e8" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://kaseya--sandbox.sandbox.my.salesforce.com/home/home.jsp" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="898, 221, 136, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Logout'" FullSelectorArgument="&lt;webctrl id='phHeader' tag='TABLE' /&gt;&lt;webctrl aaname='Logout' class='menuButtonMenuLink' parentid='userNav-menuItems' tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='phHeader' tag='TABLE' /&gt;&lt;webctrl aaname='Logout' class='menuButtonMenuLink' parentid='userNav-menuItems' type='' tag='A' check:innerText='Logout' /&gt;" Guid="150884ca-7d42-44c0-a20e-9dd91d3ad9d5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIwAAAAaCAYAAABl/7RgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFASURBVGhD7dbbjYMwEEDR7SmbruJOTDNOJ7RBepjgYQCbKB+jOMCu7pGQeMTiY64cfgRwIBi4EAxcCAYuBAMXgoELwcCFYODSNJghBbmEuwx2fYjhLrffTnq7RFsEA5f9gtFBXuWiRz1QXaf3g8Q4nsf1aR/nNVe5pcd0cxtF39l7e4lv3oE2dgpmGuQ8cI1g/p0OP0jSCxu4BTOFZIO34PTR22BG22doap9gtkMsItE1xY5SXuewll1lpKHlZwRzmH2CyQOthph3kimYJQKzBvOQFOpglmcEc5h/scNU7yWYr/rD3zB2bjsRweyjfTB54OVRDXK+Xw90XddJyucWTKZx2bqXvye9P8aWir+kOTqi+YqmwXzu9bsF53J8MPpBvO4i5e6C8znZDoOzIxi4EAxcCAYuBAMXgoELwcBB5Aly3LnztpBVZwAAAABJRU5ErkJggg==" InformativeScreenshot="b2d3709d417b529004928097a5c4b133.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Salesforce - Unlimited Edition' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="9b6699c3e2e1327f5f3b245ab4be980a.jpg" Selector="&lt;html app='chrome.exe' title='Login | Salesforce' /&gt;" Title="Login | Salesforce" Url="https://kaseya--sandbox.sandbox.my.salesforce.com/" />
+                      </uix:NApplicationCard.TargetApp>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+  </Sequence>
+</Activity>

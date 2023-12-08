@@ -1,0 +1,63 @@
+﻿{
+  "Metadata": {
+    "Id": "bea7294c-9965-431e-a47f-3bca153c1248",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "StudentDetails",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "ID",
+        "disabled": true,
+        "tableView": true,
+        "validate": {
+          "required": true
+        },
+        "key": "random",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Name",
+        "tableView": true,
+        "key": "name",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Email",
+        "tableView": true,
+        "validate": {
+          "required": true,
+          "minLength": 10,
+          "maxLength": 50
+        },
+        "errorLabel": "email is not valid",
+        "key": "email",
+        "type": "email",
+        "input": true
+      },
+      {
+        "label": "Phone Number",
+        "tableView": true,
+        "key": "phoneNumber",
+        "type": "phoneNumber",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

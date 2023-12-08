@@ -1,0 +1,42 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "GetNaesAndHashvalue.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "output&Sequence_12",
+        "DT&Sequence_12",
+        "hashOP&Sequence_12",
+        "HashDT&Sequence_12",
+        "HashCode&Sequence_12",
+        "Hash&Sequence_12",
+        "Form&Sequence_9",
+        "item&Sequence_8",
+        "item&Sequence_15",
+        "item&Sequence_19",
+        "getHash&Sequence_19",
+        "DT1&Sequence_19",
+        "Datatablehash&Sequence_19"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

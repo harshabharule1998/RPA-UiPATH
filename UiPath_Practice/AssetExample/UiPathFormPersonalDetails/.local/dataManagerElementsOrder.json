@@ -1,0 +1,40 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "EmpId&Sequence_1",
+        "firstname&Sequence_1",
+        "lastname&Sequence_1",
+        "email&Sequence_1",
+        "address&Sequence_1",
+        "phoneNumber&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PassingDataToUipathForm.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "random&Sequence_1",
+        "name&Sequence_1",
+        "email&Sequence_1",
+        "phoneNumber&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

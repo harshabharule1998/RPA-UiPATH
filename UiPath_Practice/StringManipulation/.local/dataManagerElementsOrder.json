@@ -1,0 +1,64 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Trim.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "trim&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "case.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "input&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PadLeftRight.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "input&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "StringNullOrEmpty.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_input&Sequence_1",
+        "nonEmptyString&Sequence_1",
+        "WhiteSpacestring&Sequence_1",
+        "emptyString&Sequence_1",
+        "nullString&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

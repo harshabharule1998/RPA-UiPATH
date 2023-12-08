@@ -1,0 +1,49 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Employee_ID_Input.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "Employee_Id"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "Employee_Id"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Updating_Data_Form.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "EMP_ID&Sequence_1",
+        "Age&Sequence_1",
+        "FirstName&Sequence_1",
+        "LastName&Sequence_1",
+        "EmpDetailsDT&Sequence_1",
+        "connection&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "EmployeeID"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

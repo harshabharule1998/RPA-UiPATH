@@ -1,0 +1,27 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "GratutiCalculator.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "empDT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "empCode",
+        "lastBasicSalary",
+        "yearInService",
+        "gratutyAmount"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

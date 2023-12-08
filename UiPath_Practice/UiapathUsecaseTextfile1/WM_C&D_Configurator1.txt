@@ -1,0 +1,13 @@
+﻿#FileName > SheetName > Columns of interest > Destination > FormulaID
+TV DPL JULY 2023.xlsx > RAM.,432 > MONTH, DPART, EST,ORDERED > S_WeeklyOrdered > UiP_Formula2
+TV DPL JULY 2023.xlsx > RAM.,432 > MONTH, DPART, ORDERED > S_WeeklyOrdered > UiP_Formula2
+
+
+
+
+
+
+
+
+
+ 

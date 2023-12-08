@@ -1,0 +1,37 @@
+
+internal id 
+4131039
+
+subscription plan
+PSA MSExchange User Access Fee
+
+Account page 
+https://kaseya--sandbox.sandbox.my.salesforce.com/0013a00001ZzSsc?srPos=0&srKp=800
+
+Debooking Qoute 
+https://kaseya--sandbox.sandbox.my.salesforce.com/a847e0000000nCIAAY
+
+Debooking Apportunity
+https://kaseya--sandbox.sandbox.my.salesforce.com/0067e00000N9tgxAAB
+
+subscription page link 
+https://kaseya--sandbox.sandbox.my.salesforce.com/a8E7e000000jd3G
+
+Rebooking Qoute 
+https://kaseya--sandbox.sandbox.my.salesforce.com/a847e0000000nCNAAY
+
+Rebooking Apportunity
+https://kaseya--sandbox.sandbox.my.salesforce.com/0067e00000N9th2AAB
+
+DR-Request Page
+https://kaseya--sandbox.sandbox.my.salesforce.com/aBO7e0000008xt3GAA
+
+
+
+
+######################################################################################3
+
+
+<html app='chrome.exe' title='Opportunity: A&amp;M ICT-Debooking * ~ Salesforce - Unlimited Edition' />
+<webctrl class='detailList' idx='5' tableRow='1' tag='TABLE' />
+<webctrl tableRow='3' tag='DIV' />

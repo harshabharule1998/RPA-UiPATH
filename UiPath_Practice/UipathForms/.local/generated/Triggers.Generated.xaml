@@ -1,0 +1,208 @@
+﻿<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Forms.Activities;assembly=UiPath.Forms.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upt="clr-namespace:UiPath.Platform.Triggers;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Studio.Forms.Runtime</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Forms.Activities</x:String>
+      <x:String>UiPath.Platform.GlobalVariables</x:String>
+      <x:String>UiPath.Forms.Activities.Base</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Forms.Runtime</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Forms.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:WorkflowViewState.IdRef="Generated_160">
+    <Sequence.Variables>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Sequence.Variables>
+    <upt:InterruptibleTriggerInitializer sap2010:WorkflowViewState.IdRef="Generated_01" />
+    <Parallel sap2010:WorkflowViewState.IdRef="Generated_12" CompletionCondition="[StopTriggersVariable]">
+      <Sequence sap2010:WorkflowViewState.IdRef="Generated_43">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Default="[&quot;0&quot;]" Name="BreakTriggerScopeVariableName" />
+        </Sequence.Variables>
+        <ui:TriggerScope sap2010:WorkflowViewState.IdRef="Generated_34" SchedulingMode="Sequential">
+          <ui:TriggerScope.Action>
+            <ActivityAction x:TypeArguments="ufa:TextTriggerEventArgs">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ufa:TextTriggerEventArgs" Name="TriggerEventArgs" />
+              </ActivityAction.Argument>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ageCheckTrigger.xaml - Invoke Workflow File" sap2010:WorkflowViewState.IdRef="Generated_26" UnSafe="False" WorkflowFileName="ageCheckTrigger.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <OutArgument x:TypeArguments="x:Boolean" x:Key="StopTriggersOutArgument">[StopTriggersVariable]</OutArgument>
+                  <InArgument x:TypeArguments="ufa:TextTriggerEventArgs" x:Key="TriggerEventArgs">[TriggerEventArgs]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="BreakTriggerScopeInArgument">[BreakTriggerScopeVariableName]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </ActivityAction>
+          </ui:TriggerScope.Action>
+          <ui:TriggerScope.Triggers>
+            <scg:List x:TypeArguments="Activity" Capacity="1">
+              <ufa:FormTriggerActivity x:TypeArguments="ufa:TextTriggerEventArgs" MessageId="{x:Null}" Tag="{x:Null}" DisplayName="Form trigger activity" Enabled="True" Event="changed.areYouAbove18OrNot" FormId="fe77ecba-b99b-455d-ad48-e4117496dd02" sap:VirtualizedContainerService.HintSize="410,159" sap2010:WorkflowViewState.IdRef="FormTriggerActivity`1_15" SchedulingMode="Sequential" TriggerId="8ef66ece-542c-448c-aa28-bf1e3389048f" />
+            </scg:List>
+          </ui:TriggerScope.Triggers>
+        </ui:TriggerScope>
+      </Sequence>
+      <Sequence sap2010:WorkflowViewState.IdRef="Generated_77">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Default="[&quot;0&quot;]" Name="BreakTriggerScopeVariableName" />
+        </Sequence.Variables>
+        <ui:TriggerScope sap2010:WorkflowViewState.IdRef="Generated_68" SchedulingMode="Sequential">
+          <ui:TriggerScope.Action>
+            <ActivityAction x:TypeArguments="ufa:TextTriggerEventArgs">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ufa:TextTriggerEventArgs" Name="TriggerEventArgs" />
+              </ActivityAction.Argument>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CityTrigger.xaml - Invoke Workflow File" sap2010:WorkflowViewState.IdRef="Generated_510" UnSafe="False" WorkflowFileName="CityTrigger.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="ufa:TextTriggerEventArgs" x:Key="TriggerEventArgs">[TriggerEventArgs]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </ActivityAction>
+          </ui:TriggerScope.Action>
+          <ui:TriggerScope.Triggers>
+            <scg:List x:TypeArguments="Activity" Capacity="1">
+              <ufa:FormTriggerActivity x:TypeArguments="ufa:TextTriggerEventArgs" MessageId="{x:Null}" Tag="{x:Null}" DisplayName="Form trigger activity" Enabled="True" Event="changed.city" FormId="fe77ecba-b99b-455d-ad48-e4117496dd02" sap:VirtualizedContainerService.HintSize="410,159" sap2010:WorkflowViewState.IdRef="FormTriggerActivity`1_19" SchedulingMode="Sequential" TriggerId="8cf1f0dd-eee5-465f-bcf4-f1cacace8f4d" />
+            </scg:List>
+          </ui:TriggerScope.Triggers>
+        </ui:TriggerScope>
+      </Sequence>
+      <Sequence sap2010:WorkflowViewState.IdRef="Generated_1011">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Default="[&quot;0&quot;]" Name="BreakTriggerScopeVariableName" />
+        </Sequence.Variables>
+        <ui:TriggerScope sap2010:WorkflowViewState.IdRef="Generated_912" SchedulingMode="Sequential">
+          <ui:TriggerScope.Action>
+            <ActivityAction x:TypeArguments="ufa:TextTriggerEventArgs">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ufa:TextTriggerEventArgs" Name="TriggerEventArgs" />
+              </ActivityAction.Argument>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NotIntrestedInDonationTrigger.xaml - Invoke Workflow File" sap2010:WorkflowViewState.IdRef="Generated_814" UnSafe="False" WorkflowFileName="NotIntrestedInDonationTrigger.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <OutArgument x:TypeArguments="x:Boolean" x:Key="StopTriggersOutArgument">[StopTriggersVariable]</OutArgument>
+                  <InArgument x:TypeArguments="ufa:TextTriggerEventArgs" x:Key="TriggerEventArgs">[TriggerEventArgs]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="BreakTriggerScopeInArgument">[BreakTriggerScopeVariableName]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </ActivityAction>
+          </ui:TriggerScope.Action>
+          <ui:TriggerScope.Triggers>
+            <scg:List x:TypeArguments="Activity" Capacity="1">
+              <ufa:FormTriggerActivity x:TypeArguments="ufa:TextTriggerEventArgs" MessageId="{x:Null}" Tag="{x:Null}" DisplayName="Form trigger activity" Enabled="True" Event="changed.wantToParticipate" FormId="fe77ecba-b99b-455d-ad48-e4117496dd02" sap:VirtualizedContainerService.HintSize="410,159" sap2010:WorkflowViewState.IdRef="FormTriggerActivity`1_113" SchedulingMode="Sequential" TriggerId="75548706-3997-4b28-975d-cb196cb33f66" />
+            </scg:List>
+          </ui:TriggerScope.Triggers>
+        </ui:TriggerScope>
+      </Sequence>
+      <Sequence sap2010:WorkflowViewState.IdRef="Generated_1315">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Default="[&quot;0&quot;]" Name="BreakTriggerScopeVariableName" />
+        </Sequence.Variables>
+        <ui:TriggerScope sap2010:WorkflowViewState.IdRef="Generated_1216" SchedulingMode="Sequential">
+          <ui:TriggerScope.Action>
+            <ActivityAction x:TypeArguments="ufa:FormInfoTriggerEventArgs">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ufa:FormInfoTriggerEventArgs" Name="TriggerEventArgs" />
+              </ActivityAction.Argument>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="submitTrigger.xaml - Invoke Workflow File" sap2010:WorkflowViewState.IdRef="Generated_1118" UnSafe="False" WorkflowFileName="submitTrigger.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <OutArgument x:TypeArguments="x:Boolean" x:Key="StopTriggersOutArgument">[StopTriggersVariable]</OutArgument>
+                  <InArgument x:TypeArguments="ufa:FormInfoTriggerEventArgs" x:Key="TriggerEventArgs">[TriggerEventArgs]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="BreakTriggerScopeInArgument">[BreakTriggerScopeVariableName]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </ActivityAction>
+          </ui:TriggerScope.Action>
+          <ui:TriggerScope.Triggers>
+            <scg:List x:TypeArguments="Activity" Capacity="1">
+              <ufa:FormTriggerActivity x:TypeArguments="ufa:FormInfoTriggerEventArgs" MessageId="{x:Null}" Tag="{x:Null}" DisplayName="Form trigger activity" Enabled="True" Event="click.submit" FormId="fe77ecba-b99b-455d-ad48-e4117496dd02" sap:VirtualizedContainerService.HintSize="388,159" sap2010:WorkflowViewState.IdRef="FormTriggerActivity`1_117" SchedulingMode="Sequential" TriggerId="7e25407b-c47e-44e9-b67c-03bef6d1a308" />
+            </scg:List>
+          </ui:TriggerScope.Triggers>
+        </ui:TriggerScope>
+      </Sequence>
+      <Sequence sap2010:WorkflowViewState.IdRef="Generated_1419">
+        <ui:ListenForStopTriggers sap2010:WorkflowViewState.IdRef="Generated_1520" />
+        <Assign x:TypeArguments="x:Boolean" Value="True">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Boolean">
+              <VariableReference x:TypeArguments="x:Boolean">
+                <VariableReference.Variable>
+                  <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID0" Default="[false]" Name="StopTriggersVariable" />
+                </VariableReference.Variable>
+              </VariableReference>
+            </OutArgument>
+          </Assign.To>
+        </Assign>
+      </Sequence>
+    </Parallel>
+  </Sequence>
+</Activity>

@@ -1,0 +1,40 @@
+Quote
+#Q-1487104
+
+Prepared By: Sharayu Deshmukh Bill To: Ship To:
+Date: 22-May-2023 Bert Hoogschagen Bert Hoogschagen
+Quote Valid Until: 01-Jun-2023 A&M ICT A&M ICT
+Payment Terms: Upon Receipt Deimoslaan 9 Deimoslaan 9
+Heerhugowaard,  1703DA Heerhugowaard,  1703DA
+Netherlands Netherlands
+
+Monthly Start Date: 01-Jun-2023
+
+SKU Name Billing Effective Dates Effective Price Quantity Price Per Term Total
+Frequency Period
+S-CLD- Monthly 01-Jun-2023- 0.45 -1300  -585.00 7 Months -4,095.00
+DRMM- 31-Dec-2023
+RNSMWR -4,095.00
+Description: License for Datto RMM Ransomware Detection endpoints
+Ship To: Bert Hoogschagen
+SubTotal: EUR -4,095.00
+
+Monthly Amount :EUR -585.00
+Total Quote Amount:  EUR -4,095.00
+*Applicable Taxes will be applied upon invoicing
+**Terms < 1 may reflect higher price per period than Total Quote Amount
+
+By clicking the “I Accept this Quote” button below (or accepting this Quote through any other means), I confirm that: (i) I am placing
+an order for the products and services described in the Quote; (ii) the use, purchase, distribution or other activities related to the
+products and services, as well as any related relationship with Kaseya, is subject to the Kaseya Master Agreement, which can be
+found at https://www.kaseya.com/legal/kaseya-master-agreement/; (iii) I hereby agree to the terms and conditions of the Kaseya
+Master Agreement (iv) and, any other terms or conditions, such as those on my purchase order or other document that is not sent
+by Kaseya, will not apply and will have no force or effect.
+
+\accept_1_Quote\
+
+Comprehensive. Integrated. Cost-Effective
+Kaseya is a leading provider of IT and Security management solutions
+For managed service providers (MSPs) and small to medium sized
+Businesses (SMB’s). To learn more visit www.kaseya.com
+Page 1

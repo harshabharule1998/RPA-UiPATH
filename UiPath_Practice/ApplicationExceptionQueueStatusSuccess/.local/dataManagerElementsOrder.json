@@ -1,0 +1,44 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransItem&Flowchart_1",
+        "First_Name&Flowchart_1",
+        "Last_Name&Flowchart_1",
+        "Address&Flowchart_1",
+        "Email&Flowchart_1",
+        "Company_Name&Flowchart_1",
+        "Role&Flowchart_1",
+        "Phone_Number&Flowchart_1",
+        "RPAbrowser&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "itemsDT&Sequence_3",
+        "QueueName&Sequence_3",
+        "argument_role&Sequence_2",
+        "argument_email&Sequence_2",
+        "argument_address&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

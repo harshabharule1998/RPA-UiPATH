@@ -1,0 +1,9 @@
+﻿Sub Macro1()
+'
+' Macro1 Macro
+'
+
+'
+    Range("A1:O578").Select
+    Selection.NumberFormat = "$#,##0"
+End Sub

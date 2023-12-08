@@ -1,0 +1,7 @@
+﻿{
+  "IdMap": {
+    "e3514222-360d-4f1f-b396-6d443ebb588d": "../../cityStateValue.uiform",
+    "dffc73a0-54b1-45e4-98cd-13ca44452fef": "../../pincode.uiform",
+    "d5b4d467-a325-45ee-89c3-9dbcecb56435": "../../wrongPincode.uiform"
+  }
+}

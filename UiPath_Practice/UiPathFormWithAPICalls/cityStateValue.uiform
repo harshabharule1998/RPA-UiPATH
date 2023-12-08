@@ -1,0 +1,61 @@
+﻿{
+  "Metadata": {
+    "Id": "e3514222-360d-4f1f-b396-6d443ebb588d",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "cityStateValue",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h1",
+        "content": "Display State and State for provided pincode",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Pincode",
+        "hidden": true,
+        "tableView": true,
+        "key": "pincode",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "City",
+        "tableView": true,
+        "key": "city",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "State",
+        "tableView": true,
+        "key": "state",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Close The Form",
+        "showValidations": false,
+        "disableOnInvalid": true,
+        "tableView": false,
+        "key": "submit",
+        "properties": {
+          "closeOnSubmit": "False"
+        },
+        "type": "button",
+        "saveOnEnter": false,
+        "input": true
+      }
+    ]
+  }
+}

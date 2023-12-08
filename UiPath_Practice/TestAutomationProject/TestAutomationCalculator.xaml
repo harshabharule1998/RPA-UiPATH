@@ -1,0 +1,158 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestAutomationCalculator" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="FirstNumber" Type="InArgument(x:Int32)" />
+    <x:Property Name="SecondNumber" Type="InArgument(x:Int32)" />
+    <x:Property Name="sum1" Type="InOutArgument(x:Int32)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>838,1378</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>TestAutomationCalculator_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TestAutomationCalculator" sap:VirtualizedContainerService.HintSize="637,1313" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="sum" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Calculator.net: Free Online Calculators - Math, Fitness, Finance, Science" sap:VirtualizedContainerService.HintSize="575,1202" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9501149b-a01d-4c01-b032-f459fe92f1a5" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,985" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click FirstNumber" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9501149b-a01d-4c01-b032-f459fe92f1a5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.calculator.net/" CvElementArea="487, 335, 54, 34" CvTextArea="508, 343, 12, 15" CvTextArgument="4" CvType="Button" DesignTimeRectangle="489, 336, 52, 32" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'4'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='sciout' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' class='scinm' parentid='sciout' tableRow='2' tag='SPAN' /&gt;&quot;, FirstNumber)]" FuzzySelectorArgument="&lt;webctrl id='sciout' tag='TABLE' /&gt;&lt;webctrl aaname='4' class='scinm' parentid='sciout' type='' tag='SPAN' check:innerText='4' /&gt;" Guid="7b694b4c-0345-4c36-b993-968dfea09435" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAAkCAYAAADckvn+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEQSURBVGhD7dk9CsJAEIbhvZOQKo0X0F5Spw6WChYqBDyAYCGKkTRKwMqfJrZWGjzQp6PZuEI6/5hxB94iyMI+BFdJFITPfwGjXYZ6O0bFH7GM9h5ts1xznwJIOK+3xGh1QLI/s4z27vWXmG1PucoA1lsxa5yODLWrRU8BpFtctoBjZNFjgRyzQO5Z4OdK0XQVlFJwOmnJ5+/pd8BhcMMJBc7h5TiRwNB/4OQBkwEcgrkBPHnfQX2wVNFMBB4y407VAIkD6oMlQHi7lgY0fhZKcwcYl617MQv8XNL/ycgHficL5J4Fcs8CufefQPGP7umFRaO7YI2kvZNhsj7mKgNIM90c2b8+mxo4miegxBEOBC5U/JASQ0Wj/gAAAABJRU5ErkJggg==" InformativeScreenshot="f208bd41441232d249da18342adab0e6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Calculator.net: Free Online Calculators - Math, Fitness, Finance, Science' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '+'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9501149b-a01d-4c01-b032-f459fe92f1a5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.calculator.net/" CvElementArea="650, 299, 54, 34" CvTextArea="671, 309, 11, 11" CvTextArgument="+" CvType="Button" DesignTimeRectangle="651, 300, 52, 32" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'+'" FullSelectorArgument="&lt;webctrl id='sciout' tableRow='1' tag='TABLE' /&gt;&lt;webctrl class='sciop' parentid='sciout' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sciout' tag='TABLE' /&gt;&lt;webctrl class='sciop' parentid='sciout' type='' tag='SPAN' aaname='+' check:innerText='+' /&gt;" Guid="d5f01e42-9d65-4aed-9c49-d1cbbf896c6b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAAkCAYAAADckvn+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADFSURBVGhD7dmxCsIwFIXhvHpfxRcoOKjgqkvndClUA+LUOvkAVw/aUCFuzXDSc+GfQuF+lC6Ns8JnXcA2jFafO9scPWXYvQ3DV/OZCMTBvrlYd3vYfXxSht1hmCMjsD511LgpGGCZJgLxilMPMAbLNAIyJiB7ArInYJYOlTnn3lW2TZ0vmIBZKhIYUf/KgxUwS/oGl0tA9gRkT0D2BGRPQPbWCSz+170Pg+2anhqJ3WHw18TlCwZI9uszGObzAyxxCgeavQB4ZEZ4VVbxfQAAAABJRU5ErkJggg==" InformativeScreenshot="86db1a612ba348a56ae6fbb52b73c878.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Calculator.net: Free Online Calculators - Math, Fitness, Finance, Science' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click SecondNumber" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9501149b-a01d-4c01-b032-f459fe92f1a5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.calculator.net/" CvElementArea="596, 335, 54, 34" CvTextArea="616, 342, 12, 16" CvTextArgument="6" CvType="Button" DesignTimeRectangle="597, 336, 52, 32" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'6'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='sciout' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' class='scinm' parentid='sciout' tableRow='2' tag='SPAN' /&gt;&quot;, SecondNumber)]" FuzzySelectorArgument="&lt;webctrl id='sciout' tag='TABLE' /&gt;&lt;webctrl aaname='6' class='scinm' parentid='sciout' type='' tag='SPAN' check:innerText='6' /&gt;" Guid="c5857aa5-ccbd-43f0-9ba8-6f222117e974" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAAkCAYAAADckvn+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFHSURBVGhD7dm7qsJAEAbgvJNgZeMLaC+pU4ulB1KoIPgAgoXiOYqNIWDjrdHWxgs+0Jhxd82eGCuTlRl34G+SDezH3kLiAPP6LuBke4HqzwwK3oBksO+TzUVqRD2AiHPbAQwWBwj3V5LBvrudAP42Z6nSgNXmjDROBQ2VyKLqAcQhTnuAYtCiygIpxgKpxwKzzw4aJQccR6UO3dR22cQwMImTKfVgmNr+/RgFDv2yAHlTcS3sQfGOLEMjfG6fRYwCu54YMbeffj+PGASq6RmNll8XI5nz9MQYBE7BVahkeKxBDfi0BvObtgaB8Q4aY+JrRX+ntc0uHwbGGw8DoHZMqDXHa4piXmw0XA56kcTbDJ9j4jOxQOqxQOqxQOr5TiD7T/e/6xPUWnPSSOw7GkbLo1RpQKxxhKT++2y8OkmNqH9AjsUcCHADtnKFK397bksAAAAASUVORK5CYII=" InformativeScreenshot="aa75646e2146f8285c982946c43f1a51.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Calculator.net: Free Online Calculators - Math, Fitness, Finance, Science' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Result" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="9501149b-a01d-4c01-b032-f459fe92f1a5" TextString="[sum]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.calculator.net/" CvType="AnyWordGroup" DesignTimeRectangle="215, 260, 542, 31" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'10'" FullSelectorArgument="&lt;webctrl id='sciout' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='sciOutPut' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sciout' tag='TABLE' /&gt;&lt;webctrl id='sciOutPut' type='' tag='DIV' class='' /&gt;" Guid="752088ce-f180-46f2-b63b-6ac171b6cabb" InformativeScreenshot="f666bbe4c9e54afe02dd8c2a79340e03.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Calculator.net: Free Online Calculators - Math, Fitness, Finance, Science' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[sum1]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[CInt(sum)]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAMUExURQgICDNmmY6NkP///zGrQCAAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAS0lEQVQ4T83OQQoAIAhE0bL737nAjRWjI4T0F256mE2CGDCcWNBBXwHcO9BW+9QTKgGMBna5zuwN9klnFsBocC8/vigAMA74BUBkAproCCHOFmR3AAAAAElFTkSuQmCC" InformativeScreenshot="7bcb5b8ca99b4c65776c4c22d8fcc3e5.jpg" Selector="&lt;html app='chrome.exe' title='Calculator.net: Free Online Calculators - Math, Fitness, Finance, Science' /&gt;" Title="Calculator.net: Free Online Calculators - Math, Fitness, Finance, Science" Url="https://www.calculator.net/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

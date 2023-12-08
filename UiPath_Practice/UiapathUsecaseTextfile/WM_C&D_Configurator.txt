@@ -1,0 +1,9 @@
+﻿#FileName > SheetName > Columns of interest > Destination > FormulaID
+SEARCH-google.XLSX > GS.,1626 > MEDIA,PRODUCT,PUBLICATION,Month > S_MonthlyOrdered > UiP_Formula2
+TV DPL JULY 2023.XLSX > RAM.,432 > WEEK, DPART, EST, COMMISSION > S_WeeklyCommission > UiP_Formula2
+
+
+
+
+
+ 

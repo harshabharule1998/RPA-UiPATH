@@ -1,0 +1,134 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="citrix" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="732,1107" sap2010:WorkflowViewState.IdRef="citrix_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="citrix" sap:VirtualizedContainerService.HintSize="560,1042" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="518,950" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="476,858" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window ' Shell_tra'" sap:VirtualizedContainerService.HintSize="434,392" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="3db10449f9518576ae2fc433e87a7fb1" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;">
+          <ui:WindowScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'button Notepad'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b0c8297e-0783-4150-b2e0-6b2a8a044869" Selector="&lt;uia cls='MSTaskListWClass' name='Running applications' /&gt;&lt;uia automationid='{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe' name='Notepad - 1 running window' role='button' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+              </Sequence>
+            </ActivityAction>
+          </ui:WindowScope.Body>
+        </ui:WindowScope>
+        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Untitled  Notepad'" sap:VirtualizedContainerService.HintSize="434,334" sap2010:WorkflowViewState.IdRef="WindowScope_2" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;">
+          <ui:WindowScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,226" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'editable text'" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="False" Text="Hello Everyone">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a4bb5f6e-0f2a-4be1-8414-41898c9fe60a" InformativeScreenshot="c9feb1a9c340fd19db74465823af684e" Selector="&lt;wnd aaname='Text Editor' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+              </Sequence>
+            </ActivityAction>
+          </ui:WindowScope.Body>
+        </ui:WindowScope>
+      </Sequence>
+    </Sequence>
+  </Sequence>
+</Activity>

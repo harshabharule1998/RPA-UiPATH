@@ -1,0 +1,47 @@
+﻿{
+  "Metadata": {
+    "Id": "124d64e3-7332-47a1-9480-a41ab7011f39",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "EmpDetails",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "html": "<p><strong>Home Page</strong></p>",
+        "label": "Home Page",
+        "refreshOnChange": false,
+        "key": "homePage",
+        "type": "content",
+        "input": false,
+        "tableView": false
+      },
+      {
+        "label": "Employee Id",
+        "tableView": false,
+        "delimiter": false,
+        "requireDecimal": false,
+        "truncateMultipleSpaces": false,
+        "validate": {
+          "required": true
+        },
+        "key": "employeeId",
+        "type": "number",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

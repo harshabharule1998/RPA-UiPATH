@@ -1,0 +1,113 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="707,602" sap2010:WorkflowViewState.IdRef="Main_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="509,537" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" Hidden="False" sap:VirtualizedContainerService.HintSize="467,445" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="False" Url="https://docs.uipath.com/activities/docs/hover-image">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,344" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:HoverImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Hover Image 'iexplore.exe Crime'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="HoverImage_1" KeyModifiers="None" SendWindowMessages="False">
+              <ui:HoverImage.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:HoverImage.CursorPosition>
+              <ui:HoverImage.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+              </ui:HoverImage.Image>
+              <ui:HoverImage.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="65071760-2fec-4b2d-a101-07a8fe5b9dd3" WaitForReady="INTERACTIVE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:HoverImage.Target>
+            </ui:HoverImage>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="956f5057-24c8-4e3d-beb2-d5e86e06a11a" InformativeScreenshot="1e7ef533722ca0627c9a1e6f20b531be" Selector="&lt;html title='*' /&gt;&lt;webctrl aaname='Other editions' parentid='imagecol' tag='A' /&gt;" WaitForReady="INTERACTIVE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>

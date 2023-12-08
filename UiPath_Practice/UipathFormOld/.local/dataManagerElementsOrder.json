@@ -1,0 +1,41 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "phone&Sequence_4",
+        "email&Sequence_4",
+        "name&Sequence_4",
+        "customerName&Sequence_1",
+        "RowIndex&Sequence_1",
+        "customerDT&Sequence_1",
+        "hiddenField&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "formState&Sequence_3",
+        "formCity&Sequence_3",
+        "DT&Sequence_2",
+        "City&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

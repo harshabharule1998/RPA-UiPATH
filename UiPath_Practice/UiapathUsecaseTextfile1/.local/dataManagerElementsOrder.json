@@ -1,0 +1,77 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "fourthColValue&Sequence_1",
+        "thirdColValue&Sequence_1",
+        "secondColValue&Sequence_1",
+        "firstColValue&Sequence_1",
+        "xamlFileName&Sequence_1",
+        "newSheetName&Sequence_1",
+        "excelSheetName&Sequence_1",
+        "excelFileName&Sequence_1",
+        "columnnames&Sequence_1",
+        "Line&Sequence_1",
+        "lastword&Sequence_1",
+        "lastline&Sequence_1",
+        "file&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "UiP_Formula2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "newsheetVar&Sequence_1",
+        "SheetNameVar&Sequence_1",
+        "excelFileNameVar&Sequence_1",
+        "count1&Sequence_1",
+        "newsheet1&Sequence_1",
+        "count1&Sequence_47",
+        "fourthColumn&Sequence_1",
+        "colArray&Sequence_1",
+        "count&Sequence_1",
+        "columnnames&Sequence_1",
+        "firstColumn&Sequence_1",
+        "secondColumn&Sequence_1",
+        "thirdColumn&Sequence_1",
+        "range&Sequence_1",
+        "lastcell&Sequence_1",
+        "startCell&Sequence_1",
+        "lastColInExcel&Sequence_1",
+        "firstColInExcel&Sequence_1",
+        "DT&Sequence_1",
+        "excelLastCol&Sequence_1",
+        "LastCol&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_columnnames",
+        "newSheet",
+        "excelfileName",
+        "sheetName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

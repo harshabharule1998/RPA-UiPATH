@@ -1,0 +1,32 @@
+﻿{
+  "Metadata": {
+    "Id": "4ed8c41d-661c-480e-8b52-23a8a745a66e",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "ExistingUserRegister",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "CustomerID",
+        "tableView": true,
+        "key": "customerId",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

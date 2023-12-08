@@ -1,0 +1,268 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DebookingQouteUpdated&Sequence_65",
+        "readDebookQoute&Sequence_65",
+        "text&Sequence_65",
+        "endDateDbookQPdfUpdated&Sequence_65",
+        "serchOverrideInDebookQoute&Sequence_53",
+        "urlOfEditLinesPage&Sequence_38",
+        "totalEurValue&Sequence_38",
+        "variable1&Sequence_38",
+        "value&Sequence_38",
+        "negativeValue&Sequence_38",
+        "serchOverrideInDebookQoute&Sequence_21",
+        "endDateDbookQPdf&Sequence_1",
+        "subscriptionEndDate&Sequence_1",
+        "subscriptionPage&Sequence_1",
+        "text&Sequence_9",
+        "readDebookQoute&Sequence_9",
+        "DebookeQoute&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExtractDateFromPdf.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "EffectiveEndDateOfDebookQoute&Sequence_1",
+        "readDebookQoute&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SubscriptionPage.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "effectiveEndDateFromSubscriptionPage&Sequence_3",
+        "subscriptionPage&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "overrideDate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "serchOverrideInDebookQoute&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "checkDebookingDateAfterOverride.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "negativeValue&Sequence_1",
+        "value&Sequence_1",
+        "variable1&Sequence_1",
+        "totalEurValue&Sequence_1",
+        "urlOfEditLinesPage&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "verifyNegaiveValue.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "negativeValue&Sequence_1",
+        "value&Sequence_1",
+        "test&Sequence_1",
+        "serchOverrideInDebookQoute&"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ConvertStringDateToDateTime.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "date2&Sequence_5",
+        "variable1&Sequence_5",
+        "dateS&Sequence_5",
+        "d2&Sequence_5",
+        "d1&Sequence_5",
+        "d&Sequence_5",
+        "endDate&Sequence_5",
+        "endDateDbookQPdfUpdated&Sequence_5",
+        "readPDF&Sequence_5",
+        "urlOfEditLinesPage&Sequence_12",
+        "totalEurValue&Sequence_12",
+        "variable1&Sequence_12",
+        "value&Sequence_12",
+        "negativeValue&Sequence_12",
+        "text&Sequence_10"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DebookingQouteFlow.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "urlOfEditLinesPage&Sequence_73",
+        "totalEurValue&Sequence_73",
+        "variable1&Sequence_73",
+        "value&Sequence_73",
+        "negativeValue&Sequence_73",
+        "DateOnPdfDateTime&Sequence_1",
+        "UpdateDateOnPDFDateTime&Sequence_1",
+        "EndDateOnSubscriptionDateTime&Sequence_1",
+        "DateOnPdf&Sequence_2",
+        "serchOverrideInDebookQoute&Sequence_1",
+        "subscriptionEndDate&Sequence_1",
+        "subscriptionPage&Sequence_1",
+        "endDateDbookQPdf&Sequence_1",
+        "DebookeQoute&Sequence_1",
+        "DebookingQouteUpdated&Sequence_1",
+        "text&Sequence_1",
+        "readDebookQoute&Sequence_1",
+        "endDateDbookQPdfUpdated&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DebookApportunity.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DebookApportunityPageLink&Sequence_1",
+        "SubscriptioForQouteDataPageLink&Sequence_1",
+        "ExcludeTarMatrix&Sequence_1",
+        "isContractModificationacs&Sequence_1",
+        "isContractModification&Sequence_1",
+        "primaryProductIntrest&Sequence_17",
+        "value&Sequence_17",
+        "productName&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "extractEndDateFromQoute.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "endDateDbookQPdf&Sequence_2",
+        "readpdf&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "primaryProductIntrest.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExcludeTarMatrix&Sequence_13",
+        "isContractModification&Sequence_14",
+        "isContractModificationacs&Sequence_14",
+        "productName&Sequence_1",
+        "value&Sequence_1",
+        "primaryProductIntrest&Sequence_1",
+        "variable1&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "CheckboxValidation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "readPDF&",
+        "endDateDbookQPdf&"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "generateOldPDFregx.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "endDateDbookQPdf&Sequence_1",
+        "readPDF&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "OldPDFdateAndSubscriptionPageDateCompare.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DebookQouteNotes.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SubscriptionEndDate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "subscriptionEndDate&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "debookQouteBefore&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "RebookingOpportunityPage.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_ArrAmount&Sequence_1",
+        "isChecked&Sequence_2",
+        "isTarMetrics&Sequence_2",
+        "isAutoProvision&Sequence_2",
+        "str_oppType&Sequence_2",
+        "str_CloseDate&Sequence_2",
+        "str_contConversion&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Notes"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

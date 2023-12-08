@@ -1,0 +1,102 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_2",
+        "SystemException&StateMachine_2",
+        "BusinessException&StateMachine_2",
+        "TransactionNumber&StateMachine_2",
+        "Config&StateMachine_2",
+        "RetryNumber&StateMachine_2",
+        "TransactionField2&StateMachine_2",
+        "TransactionField1&StateMachine_2",
+        "TransactionID&StateMachine_2",
+        "dt_TransactionData&StateMachine_2",
+        "ConsecutiveSystemExceptions&StateMachine_2",
+        "UserValue&StateMachine_2",
+        "DT6&StateMachine_2",
+        "count&StateMachine_2",
+        "inputData&Sequence_49",
+        "ShouldStop&Sequence_42",
+        "in_Config&TryCatch_21",
+        "in_Transactionitem&TryCatch_21"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Username&Sequence_9",
+        "Password&Sequence_9",
+        "UiPathBankSite&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransferFundAmount&Sequence_8",
+        "Second&Sequence_8",
+        "First&Sequence_8",
+        "Third&Sequence_8",
+        "FirstAccount&Sequence_8",
+        "Name&Sequence_8",
+        "DT1&Sequence_8",
+        "Accounts&Sequence_8",
+        "DT3&Sequence_8",
+        "Fourth&Sequence_8",
+        "UserValue&Sequence_8",
+        "DT6&Sequence_8",
+        "DownloadedStatements&Sequence_8",
+        "NameFromQ&Sequence_8",
+        "count&Sequence_8",
+        "variable1&Sequence_7",
+        "DT2&Sequence_6",
+        "StoreTransactions&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+Quote
+#Q-1487303
+
+Prepared By: Sharayu Deshmukh Bill To: Ship To:
+Date: 01-Jun-2023 Andrew Lavery Andrew Lavery
+Quote Valid Until: 01-Jun-2023 A1 Computer Services A1 Computer Services
+Payment Terms: Upon Receipt 16 Mount Ebo Rd S Ste 17 16 Mount Ebo Rd S Ste 17
+Brewster, NY 105094038 Brewster, NY 105094038
+United States United States
+
+Monthly Start Date: 01-Jun-2023
+
+SKU Name Billing Effective Dates Effective Price Quantity Price Per Term Total
+Frequency Period
+S-PSA- Monthly 01-Jun-2023- 10.00 7  70.00 17 Months 1,190.00
+MSEXC_A 31-Oct-2024
+CCESS 1,190.00
+Description: Autotask PSA MSExchange User Access Fee
+Ship To: Andrew Lavery
+SubTotal: USD 1,190.00
+
+Monthly Amount :USD 70.00
+Total Quote Amount:  USD 1,190.00
+*Applicable Taxes will be applied upon invoicing
+**Terms < 1 may reflect higher price per period than Total Quote Amount
+
+By clicking the “I Accept this Quote” button below (or accepting this Quote through any other means), I confirm that: (i) I am placing
+an order for the products and services described in the Quote; (ii) the use, purchase, distribution or other activities related to the
+products and services, as well as any related relationship with Kaseya, is subject to the Kaseya Master Agreement, which can be
+found at https://www.kaseya.com/legal/kaseya-master-agreement/; (iii) I hereby agree to the terms and conditions of the Kaseya
+Master Agreement (iv) and, any other terms or conditions, such as those on my purchase order or other document that is not sent
+by Kaseya, will not apply and will have no force or effect.
+
+\accept_1_Quote\
+
+Comprehensive. Integrated. Cost-Effective
+Kaseya is a leading provider of IT and Security management solutions
+For managed service providers (MSPs) and small to medium sized
+Businesses (SMB’s). To learn more visit www.kaseya.com
+Page 1

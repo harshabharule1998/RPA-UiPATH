@@ -1,0 +1,64 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "o_pyinstance&Sequence_2",
+        "Invoke_out&Sequence_2",
+        "PyObj&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "UipathPythonWithAPI.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "WeatherData&Sequence_2",
+        "Temp&Sequence_2",
+        "City&Sequence_2",
+        "pyScript&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "out_load&Sequence_2",
+        "out_invoke&Sequence_2",
+        "getResult&Sequence_2",
+        "z&Sequence_2",
+        "variable1&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "UipathExcelPython.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "pyScript&Sequence_2",
+        "pyVerReturn&Sequence_2",
+        "pyFunReturn&Sequence_2",
+        "Results&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
